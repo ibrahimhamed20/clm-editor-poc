@@ -1,0 +1,130 @@
+<h1>TinyMCE Angular Comments Demo</h1>
+<editor [(ngModel)]="content" [init]="editorConfig" [apiKey]="'j55xh2wgznugfcpav601enwbckbqcosdf0sy72l248ii6xwo'" (onKeyUp)="onKeyDown($event)">
+</editor>
+<br>
+<hr>
+<div>{{content}}</div>
+<hr>
+<br>
+<div class="tw-mb-5 tw-border-solid tw-border tw-border-gray-500 tw-p-5" *ngFor="let conv of conversations">
+    <h2>Conversation No# {{conv.uid}}</h2>
+    <div *ngFor="let comment of conv.comments; let isfirst = first;">
+        <article class="tw-p-6 tw-text-base tw-bg-white tw-rounded-lg dark:tw-bg-gray-900" *ngIf="isfirst">
+            <footer class="tw-flex tw-justify-between tw-items-center tw-mb-2">
+                <div class="tw-flex tw-items-center">
+                    <p
+                        class="tw-inline-flex tw-items-center tw-mr-3 tw-text-sm tw-text-gray-900 dark:tw-text-white tw-font-semibold">
+                        <img class="tw-mr-2 tw-w-6 tw-h-6 tw-rounded-full"
+                            src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="Michael Gough">
+                        {{comment.authorName}}
+                    </p>
+                    <p class="tw-text-sm tw-text-gray-600 dark:tw-text-gray-400"><time pubdate
+                            [dateTime]="comment.createdAt" [title]="comment.createdAt | date: 'full'">
+                            {{comment.createdAt | date: 'MMM. d, y h:mm:ss a'}}</time></p>
+                </div>
+                <button id="dropdownComment1Button" data-dropdown-toggle="dropdownComment1"
+                    class="tw-inline-flex tw-items-center tw-p-2 tw-text-sm tw-font-medium tw-text-center tw-text-gray-500 dark:tw-text-gray-400 tw-bg-white tw-rounded-lg hover:tw-bg-gray-100 focus:tw-ring-4 focus:tw-outline-none focus:tw-ring-gray-50 dark:tw-bg-gray-900 dark:hover:tw-bg-gray-700 dark:focus:tw-ring-gray-600"
+                    type="button">
+                    <svg class="tw-w-4 tw-h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        viewBox="0 0 16 3">
+                        <path
+                            d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" />
+                    </svg>
+                    <span class="tw-sr-only">Comment settings</span>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownComment1"
+                    class="tw-hidden tw-z-10 tw-w-36 tw-bg-white tw-rounded tw-divide-y tw-divide-gray-100 tw-shadow dark:tw-bg-gray-700 dark:tw-divide-gray-600">
+                    <ul class="py-1 text-sm text-gray-700 dark:text-gray-200"
+                        aria-labelledby="dropdownMenuIconHorizontalButton">
+                        <li>
+                            <a href="#"
+                                class="tw-block tw-py-2 tw-px-4 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-600 dark:hover:tw-text-white">Edit</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="tw-block tw-py-2 tw-px-4 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-600 dark:hover:tw-text-white">Remove</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="tw-block tw-py-2 tw-px-4 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-600 dark:hover:tw-text-white">Report</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+            <p class="tw-text-gray-500 dark:tw-text-gray-400">{{comment.content}}</p>
+            <div class="tw-flex tw-items-center tw-mt-4 tw-space-x-4">
+                <button type="button" (click)="showReplyBox = true"
+                    class="tw-flex tw-items-center tw-text-sm tw-text-gray-500 hover:tw-underline dark:tw-text-gray-400 tw-font-medium">
+                    <svg class="tw-mr-1.5 tw-w-3.5 tw-h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 20 18">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 5h5M5 8h2m6-3h2m-5 3h6m2-7H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h3v5l5-5h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1Z" />
+                    </svg>
+                    Reply
+                </button>
+            </div>
+            <div *ngIf="showReplyBox">
+                <div
+                    class="tw-py-2 tw-px-4 tw-mt-2 tw-bg-white tw-rounded-lg tw-rounded-t-lg tw-border tw-border-gray-200 dark:tw-bg-gray-800 dark:tw-border-gray-700">
+                    <label for="comment" class="tw-sr-only">Your comment</label>
+                    <textarea id="comment" rows="3"
+                        class="tw-px-0 tw-w-full tw-text-sm tw-text-gray-900 tw-border-0 focus:tw-ring-0 focus:tw-outline-none dark:tw-text-white dark:tw-placeholder-gray-400 dark:tw-bg-gray-800"
+                        placeholder="Write a comment..."></textarea>
+                </div>
+                <button type="submit"
+                    class="tw-mt-2 tw-inline-flex tw-items-center tw-py-2.5 tw-px-4 tw-text-xs tw-font-medium tw-text-center tw-text-white tw-bg-purple-700 tw-rounded-lg focus:tw-ring-4 focus:tw-ring-purple-200 dark:focus:tw-ring-purple-900 hover:tw-bg-purple-800">
+                    Post Reply
+                </button>
+            </div>
+        </article>
+        <article class="tw-p-6 tw-my-3 tw-ml-6 lg:tw-ml-12 tw-text-base tw-bg-white tw-rounded-lg dark:tw-bg-gray-900"
+            *ngIf="!isfirst">
+            <footer class="tw-flex tw-justify-between tw-items-center mb-2">
+                <div class="tw-flex tw-items-center">
+                    <p
+                        class="tw-inline-flex tw-items-center tw-mr-3 tw-text-sm tw-text-gray-900 dark:tw-text-white tw-font-semibold">
+                        <img class="tw-mr-2 tw-w-6 tw-h-6 tw-rounded-full"
+                            src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="Jese Leos">
+                        {{comment.authorName}}
+                    </p>
+                    <p class="tw-text-sm tw-text-gray-600 dark:tw-text-gray-400"><time pubdate
+                            [dateTime]="comment.createdAt" [title]="comment.createdAt | date: 'full'">
+                            {{comment.createdAt | date: 'MMM. d, y h:mm:ss a'}}</time></p>
+                </div>
+                <button id="dropdownComment2Button" data-dropdown-toggle="dropdownComment2"
+                    class="tw-inline-flex tw-items-center tw-p-2 tw-text-sm tw-font-medium tw-text-center tw-text-gray-500 dark:tw-text-gray-40 tw-bg-white tw-rounded-lg hover:tw-bg-gray-100 focus:tw-ring-4 focus:tw-outline-none focus:tw-ring-gray-50 dark:tw-bg-gray-900 dark:hover:tw-bg-gray-700 dark:focus:tw-ring-gray-600"
+                    type="button">
+                    <svg class="tw-w-4 tw-h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        viewBox="0 0 16 3">
+                        <path
+                            d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" />
+                    </svg>
+                    <span class="tw-sr-only">Comment settings</span>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownComment2"
+                    class="tw-hidden tw-z-10 tw-w-36 tw-bg-white tw-rounded tw-divide-y tw-divide-gray-100 tw-shadow dark:tw-bg-gray-700 dark:tw-divide-gray-600">
+                    <ul class="tw-py-1 tw-text-sm tw-text-gray-700 dark:tw-text-gray-200"
+                        aria-labelledby="dropdownMenuIconHorizontalButton">
+                        <li>
+                            <a href="#"
+                                class="tw-block tw-py-2 tw-px-4 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-600 dark:hover:tw-text-white">Edit</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="tw-block tw-py-2 tw-px-4 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-600 dark:hover:tw-text-white">Remove</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="tw-block tw-py-2 tw-px-4 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-600 dark:hover:tw-text-white">Report</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+            <p class="tw-text-gray-500 dark:tw-text-gray-400">{{comment.content}}</p>
+        </article>
+    </div>
+</div>
+<br>
+<br>

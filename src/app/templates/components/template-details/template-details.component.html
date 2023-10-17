@@ -1,0 +1,17 @@
+<div>
+
+  <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let clause of clauses;let i=index" cdkDrag>
+      <div style="display:flex">
+        <span class="tw-text-[#00849F] tw-bg-[#C9EAF1] tw-px-4 tw-mr-4">{{i+1}}</span>
+        <span (click)="clause.active = !clause.active" [innerHTML]="clause.content"></span>
+      </div>
+      
+      <div class="tw-w-full sm:tw-w-auto select-box tw-flex-1" *ngIf="clause.active">
+        <label class="tw-text-xs tw-mb-2 tw-block">Content</label>
+        <app-editor [editorData]="clause"></app-editor>
+      </div>
+    </div>
+  </div>
+
+</div>

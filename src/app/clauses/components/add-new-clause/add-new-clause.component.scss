@@ -1,0 +1,22 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container>* {
+  width: 100%;
+}
+
+.form {
+  margin: 25px 10px;
+}
+
+button:disabled,
+button[disabled] {
+  background-color: #8d8d8d99 !important;
+  border-color: #8d8d8d99 !important;
+  span {
+    
+    color: white !important;
+  }
+}

@@ -1,0 +1,14 @@
+
+section div ul li a::before{
+    content: '';
+    position: absolute;
+    top: 100% ;
+    left: 0;
+    width: 0px;
+    height: 2px;
+    background-color: red;
+    transition: .2s;
+}
+section div ul li a:focus::before{
+    width: 100%;
+}

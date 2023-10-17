@@ -1,0 +1,1353 @@
+<mat-tab-group [selectedIndex]="2">
+  <mat-tab label="Home">
+    <div class="tw-bg-white">
+      <div class="tw-p-5 tw-bg-hero-pattern tw-relative">
+        <!-- overlay -->
+        <div class="tw-bg-textsColorPurple tw-absolute tw-top-0 tw-right-0 tw-opacity-75 tw-w-full tw-h-full"></div>
+        <div class="tw-mb-6 tw-z-20 tw-relative tw-w-full lg:tw-w-4/12">
+          <h2 class="tw-text-4xl tw-text-white tw-font-normal tw-mb-3 md:tw-mb-0 tw-leading-normal">Browse All
+            <strong>Documents</strong>
+            <br class="tw-hidden lg:tw-block" /> In
+            One <strong class="tw-text-coral">Place</strong>
+          </h2>
+          <div class="flex-c tw-mt-4 search_home">
+            <div class="tw-w-full sm:tw-w-auto tw-flex-1">
+              <mat-form-field appearance="outline"
+                class="tw-w-full tw-flex-1 tw-pb-0 tw-bg-white tw-border tw-border-gray-100 tw-rounded-l-sm tw-relative tw-h-[46px]">
+                <div class=" tw-absolute tw-left-0 tw-top-2 tw-mt-0.5">
+                  <span matSuffix class="sfi sfi-search tw-text-gray-400 tw-mt-[-5px]"></span>
+                </div>
+                <input type="text" class="placeholder:tw-text-xs tw-pl-6" placeholder="Search By Name/Email" matInput>
+              </mat-form-field>
+            </div>
+            <button mat-flat-button
+              class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-coral tw-rounded-l-none tw-min-w-0 tw-py-3 tw-px-6 tw-h-[46px]">
+              <span class="tw-text-white tw-text-sm tw-block tw-pt-px">Search</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex-c-b tw-p-5 tw-flex-col md:tw-flex-row tw-items-start md:tw-items-center">
+          <h3 class="tw-text-xl tw-font-bold tw-mb-2 md:tw-mb-0">Recently Added Documents</h3>
+          <button mat-flat-button
+            class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-gray-100 md:tw-bg-white  tw-rounded-none tw-min-w-0 tw-py-3 tw-px-6">
+            <span class="tw-text-coral tw-text-sm tw-block tw-pt-px tw-capitalize">view all</span>
+          </button>
+        </div>
+        <div class="tw-px-5">
+          <div class="tw-w-full lg:tw-w-4/12 flex-box tw-gap-2">
+            <div class="tw-w-12 tw-h-16 tw-rounded-lg tw-bg-bgSTC flex-c-c">
+              <span class="sfi sfi-file-document tw-text-white tw-text-4xl"></span>
+            </div>
+            <div>
+              <h5 class="tw-text-base tw-font-bold tw-mb-2">Document Name three</h5>
+              <div class="flex-c-b">
+                <span class="tw-text-coral tw-text-xs">Police</span>
+                <div class="flex-box tw-gap-2">
+                  <button mat-flat-button class="tw-bg-coralLight tw-w-7 tw-h-7 tw-rounded-none tw-min-w-0 tw-px-0">
+                    <span class="tw-text-coral tw-text-sm tw-block tw-py-px tw-leading-none">
+                      <i class="sfi sfi-visibility"></i>
+                    </span>
+                  </button>
+                  <button mat-flat-button class="tw-bg-[#a54ee154] tw-w-7 tw-h-7 tw-rounded-none tw-min-w-0 tw-px-0">
+                    <span class="tw-text-bgSTC tw-text-sm tw-block tw-py-px tw-leading-none">
+                      <i class="sfi sfi-upload-to-cloud"></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tw-mt-7">
+        <div class="flex-c-b tw-px-5 tw-mb-2 tw-flex-col md:tw-flex-row tw-items-start md:tw-items-center">
+          <h3 class="tw-text-xl tw-font-bold tw-mb-2 md:tw-mb-0">Wha's Happening Now ?</h3>
+          <button mat-flat-button
+            class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-gray-100 md:tw-bg-white  tw-rounded-none tw-min-w-0 tw-py-3 tw-px-6">
+            <span class="tw-text-coral tw-text-sm tw-block tw-pt-px tw-capitalize">view all</span>
+          </button>
+        </div>
+        <div class="tw-px-5">
+          <div class="tw-w-full lg:tw-w-3/12 tw-border tw-border-gray-100 tw-p-3 tw-rounded-sm">
+            <div class="tw-relative">
+              <img src="../../../assets/images/hp-toptile.png" class="tw-w-full tw-h-40 tw-rounded-md" alt="">
+              <div class="tw-bg-gray-800 tw-rounded-sm tw-px-2 tw-py-1 tw-absolute tw-bottom-[-10px] tw-left-0 tw-mx-3">
+                <span class="tw-text-xs tw-text-white tw-block">20 Jan 2022</span>
+              </div>
+            </div>
+            <h4 class="tw-text-sm tw-mt-5 tw-font-medium">STC text for example here Please replace the text</h4>
+          </div>
+        </div>
+      </div>
+      <div class="tw-mt-5">
+        <div class="flex-c-b tw-px-5 tw-flex-col md:tw-flex-row tw-items-start md:tw-items-center tw-mb-2">
+          <h3 class="tw-text-xl tw-font-bold tw-mb-2 md:tw-mb-0">Public government documents</h3>
+          <button mat-flat-button
+            class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-gray-100 md:tw-bg-white  tw-rounded-none tw-min-w-0 tw-py-3 tw-px-6">
+            <span class="tw-text-coral tw-text-sm tw-block tw-pt-px tw-capitalize">view all</span>
+          </button>
+        </div>
+        <div class="tw-px-5 flex-box tw-gap-2 tw-flex-col md:tw-flex-row tw-mt-3 md:tw-mt-0">
+          <div
+            class="tw-w-full tw-bg-emerald-500 flex-c-c tw-h-36 tw-py-7 md:tw-py-0 tw-flex-col tw-rounded-sm tw-flex-1">
+            <span class="sfi sfi-history1 tw-text-white tw-text-2xl tw-block"></span>
+            <p class="tw-text-sm tw-text-white tw-mt-1 tw-font-medium">Policy</p>
+          </div>
+          <div class="tw-w-full tw-bg-bgSTC flex-c-c tw-h-36 tw-py-7 md:tw-py-0 tw-flex-col tw-rounded-sm tw-flex-1">
+            <span class="sfi sfi-public tw-text-white tw-text-2xl tw-block"></span>
+            <p class="tw-text-sm tw-text-white tw-mt-1 tw-font-medium">Work Instruction</p>
+          </div>
+          <div class="tw-w-full tw-bg-cyan-500 flex-c-c tw-h-36 tw-py-7 md:tw-py-0 tw-flex-col tw-rounded-sm tw-flex-1">
+            <span class="sfi sfi-history1 tw-text-white tw-text-2xl tw-block"></span>
+            <p class="tw-text-sm tw-text-white tw-mt-1 tw-font-medium">Process</p>
+          </div>
+          <div class="tw-w-full tw-bg-coral flex-c-c tw-h-36 tw-py-7 md:tw-py-0 tw-flex-col tw-rounded-sm tw-flex-1">
+            <span class="sfi sfi-history1 tw-text-white tw-text-2xl tw-block"></span>
+            <p class="tw-text-sm tw-text-white tw-mt-1 tw-font-medium">Policy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="GOC Docs">
+    <div>
+      <div class="flex-c tw-bg-white tw-p-5 tw-flex-col md:tw-flex-row tw-items-start md:tw-items-center">
+        <div class="tw-flex-3">
+          <h1 class="tw-capitalize tw-text-2xl tw-font-bold">Corporate Governance Docs</h1>
+        </div>
+        <div class="flex-c tw-flex-3 tw-gap-4 tw-flex-col md:tw-flex-row">
+          <div class="flex-box tw-flex-col sm:tw-flex-row tw-w-full">
+            <mat-form-field appearance="outline"
+              class="tw-w-full tw-flex-1 tw-mt-4 sm:tw-mt-0 tw-pb-0 tw-bg-gray-50 tw-rounded-sm">
+              <span matSuffix class="sfi sfi-search tw-text-gray-400 tw-mt-[-5px]"></span>
+              <input type="text" class="placeholder:tw-text-xs tw-leading-none" placeholder="Search Here" matInput
+                [matAutocomplete]="auto">
+              <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                <mat-option>
+                  test AutoComplete
+                </mat-option>
+              </mat-autocomplete>
+            </mat-form-field>
+          </div>
+          <div class="tw-space-x-4 flex-c">
+            <button mat-flat-button (click)="openSideNav()"
+              class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-gray-100 tw-py-2.5 tw-px-6 tw-min-h-[50px]">
+              <div class="tw-text-gray-800 tw-capitalize tw-text-sm tw-block tw-py-px tw-space-x-2">
+                <span>filter</span>
+                <i class="sfi sfi-filter-icon"></i>
+              </div>
+            </button>
+            <button mat-flat-button class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-coral tw-py-2.5 tw-px-6 tw-min-h-[50px]">
+              <div class="tw-text-white tw-capitalize tw-text-sm tw-block tw-py-px tw-space-x-2">
+                <i class="sfi sfi-plus"></i> 
+                <span class="tw-whitespace-nowrap">add new</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- content-expansion -->
+      <div class="tw-bg-white tw-p-5 tw-space-y-3">
+        <div class="tw-border tw-border-gray-200 tw-rounded">
+          <mat-expansion-panel (opened)="panelOpenState = true">
+            <mat-expansion-panel-header class="tw-h-auto md:tw-h-10">
+              <mat-panel-title class="tw-text-sm flex-c-b">
+                <div class="tw-space-x-4 flex-c tw-flex-3">
+                  <div class="tw-w-1.5 tw-h-8 tw-bg-[#C9EAF1] tw-rounded-md tw-mx-1"></div>
+                  <div class="tw-space-x-2 tw-font-medium tw-text-bgSTC">
+                    <i class="sfi sfi-folder tw-font-normal"></i><span>Group Highlights</span>
+                  </div>
+                </div>
+                <div class="flex-c-b tw-space-x-5 md:tw-flex-2">
+                  <div class="tw-hidden md:tw-block">
+                    <div class="tw-capitalize tw-text-xs flex-c tw-gap-1">
+                      <span class="tw-font-normal tw-text-gray-500">document</span> :
+                      <span class="tw-font-medium tw-text-bgSTC">authority</span>
+                    </div>
+                  </div>
+                  <div class="tw-hidden md:tw-block">
+                    <div class="tw-capitalize tw-text-xs flex-c tw-gap-1">
+                      <span class="tw-font-normal tw-text-gray-500">status</span> :
+                      <span
+                        class="tw-font-medium tw-bg-cyan-200 tw-text-cyan-800 tw-block tw-pt-1.5 tw-pb-1 tw-px-4 tw-rounded-sm tw-min-w-[100px] tw-text-center">draft</span>
+                    </div>
+                  </div>
+                  <div class="tw-hidden md:tw-block">
+                    <span class="sfi sfi-star-f tw-text-yellow-400"></span>
+                  </div>
+                  <div>
+                    <button mat-button [matMenuTriggerFor]="menu" class="tw-min-w-0"><span
+                        class="sfi sfi-dots tw-text-base"></span></button>
+                    <mat-menu #menu="matMenu">
+                      <button mat-menu-item>Item 1</button>
+                      <button mat-menu-item>Item 2</button>
+                    </mat-menu>
+                  </div>
+                </div>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <!-- content -->
+            <div class="tw-bg-gray-50 tw-p-5 tw-border-t tw-border-gray-200">
+              <div class="flex-s-b tw-flex-col md:tw-flex-row tw-space-y-2 md:tw-space-y-0">
+                <div class="tw-space-y-2 md:tw-space-y-4">
+                  <div class="tw-capitalize tw-text-xs">
+                    <span class="tw-font-normal tw-text-gray-500 tw-inline-block">Classification</span> :
+                    <span class="tw-font-medium tw-inline-block">Strategic Authority</span>
+                  </div>
+                  <div class="tw-capitalize tw-text-xs">
+                    <span class="tw-font-normal tw-text-gray-500 tw-inline-block">Document No</span> :
+                    <span class="tw-font-medium tw-inline-block"> D-AIJ-100265</span>
+                  </div>
+                </div>
+                <div class="tw-space-y-2 md:tw-space-y-4">
+                  <div class="tw-capitalize tw-text-xs">
+                    <span class="tw-font-normal tw-text-gray-500 tw-inline-block">Version</span> :
+                    <span class="tw-font-medium tw-inline-block">1.02</span>
+                  </div>
+                  <div class="tw-capitalize tw-text-xs">
+                    <span class="tw-font-normal tw-text-gray-500 tw-inline-block">Version type</span> :
+                    <span class="tw-font-medium tw-inline-block">Major</span>
+                  </div>
+                </div>
+                <div class="tw-space-y-2 md:tw-space-y-4">
+                  <div class="tw-capitalize tw-text-xs">
+                    <span class="tw-font-normal tw-text-gray-500 tw-inline-block">Published Date</span> :
+                    <span class="tw-font-medium tw-inline-block">1212/2023</span>
+                  </div>
+                  <div class="tw-capitalize tw-text-xs flex-c tw-space-x-2">
+                    <img src="../../../assets/images/user.png" class="tw-w-5 tw-h-5 tw-rounded-full" alt="">
+                    <span class="tw-font-medium tw-inline-block">Marawan A.Darwish</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="tw-capitalize tw-text-xs">
+                    <span class="tw-font-normal tw-text-gray-500 tw-inline-block">Document Owner</span> :
+                    <span class="tw-font-medium tw-inline-block">61 Strategy Management</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </mat-expansion-panel>
+        </div>
+        <div class="tw-border tw-border-gray-200 tw-rounded">
+          <mat-expansion-panel (opened)="panelOpenState = true">
+            <mat-expansion-panel-header>
+              <mat-panel-title class="tw-text-sm flex-c-b">
+                <div class="tw-space-x-4 flex-c tw-flex-3">
+                  <div class="tw-w-1.5 tw-h-8 tw-bg-[#C9EAF1] tw-rounded-md tw-mx-1"></div>
+                  <div class="tw-space-x-2 tw-font-medium tw-text-bgSTC">
+                    <i class="sfi sfi-folder tw-font-normal"></i><span>Group Highlights</span>
+                  </div>
+                </div>
+                <div class="flex-c-b tw-space-x-5 md:tw-flex-2">
+                  <div class="tw-hidden md:tw-block">
+                    <div class="tw-capitalize tw-text-xs flex-c tw-gap-1">
+                      <span class="tw-font-normal tw-text-gray-500">document</span> :
+                      <span class="tw-font-medium tw-text-bgSTC">authority</span>
+                    </div>
+                  </div>
+                  <div class="tw-hidden md:tw-block">
+                    <div class="tw-capitalize tw-text-xs flex-c tw-gap-1">
+                      <span class="tw-font-normal tw-text-gray-500">status</span> :
+                      <span
+                        class="tw-font-medium tw-bg-green-200 tw-text-green-800 tw-block tw-pt-1.5 tw-pb-1 tw-px-4 tw-rounded-sm tw-min-w-[100px] tw-text-center">Approved</span>
+                    </div>
+                  </div>
+                  <div class="tw-hidden md:tw-block">
+                    <span class="sfi sfi-star-o"></span>
+                  </div>
+                  <div>
+                    <button mat-button [matMenuTriggerFor]="menu" class="tw-min-w-0"><span
+                        class="sfi sfi-dots tw-text-base"></span></button>
+                    <mat-menu #menu="matMenu">
+                      <button mat-menu-item>Item 1</button>
+                      <button mat-menu-item>Item 2</button>
+                    </mat-menu>
+                  </div>
+                </div>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <!-- content -->
+            <div class="tw-bg-gray-50 tw-p-5 tw-border-t tw-border-gray-200">
+              <div class="flex-s-b tw-flex-col md:tw-flex-row tw-space-y-2 md:tw-space-y-0">
+                <div class="tw-space-y-2 md:tw-space-y-4">
+                  <div class="tw-capitalize tw-text-xs">
+                    <span class="tw-font-normal tw-text-gray-500 tw-inline-block">Classification</span> :
+                    <span class="tw-font-medium tw-inline-block">Strategic Authority</span>
+                  </div>
+                  <div class="tw-capitalize tw-text-xs">
+                    <span class="tw-font-normal tw-text-gray-500 tw-inline-block">Document No</span> :
+                    <span class="tw-font-medium tw-inline-block"> D-AIJ-100265</span>
+                  </div>
+                </div>
+                <div class="tw-space-y-2 md:tw-space-y-4">
+                  <div class="tw-capitalize tw-text-xs">
+                    <span class="tw-font-normal tw-text-gray-500 tw-inline-block">Version</span> :
+                    <span class="tw-font-medium tw-inline-block">1.02</span>
+                  </div>
+                  <div class="tw-capitalize tw-text-xs">
+                    <span class="tw-font-normal tw-text-gray-500 tw-inline-block">Version type</span> :
+                    <span class="tw-font-medium tw-inline-block">Major</span>
+                  </div>
+                </div>
+                <div class="tw-space-y-2 md:tw-space-y-4">
+                  <div class="tw-capitalize tw-text-xs">
+                    <span class="tw-font-normal tw-text-gray-500 tw-inline-block">Published Date</span> :
+                    <span class="tw-font-medium tw-inline-block">1212/2023</span>
+                  </div>
+                  <div class="tw-capitalize tw-text-xs flex-c tw-space-x-2">
+                    <img src="../../../assets/images/user.png" class="tw-w-5 tw-h-5 tw-rounded-full" alt="">
+                    <span class="tw-font-medium tw-inline-block">Marawan A.Darwish</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="tw-capitalize tw-text-xs">
+                    <span class="tw-font-normal tw-text-gray-500 tw-inline-block">Document Owner</span> :
+                    <span class="tw-font-medium tw-inline-block">61 Strategy Management</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </mat-expansion-panel>
+        </div>
+      </div>
+
+      <!-- details-page -->
+      <div class="tw-mt-4">
+        <!-- header -->
+        <div class="tw-p-5 tw-bg-hero-pattern tw-relative">
+          <!-- overlay -->
+          <div class="tw-bg-textsColorPurple tw-absolute tw-top-0 tw-right-0 tw-opacity-75 tw-w-full tw-h-full"></div>
+          <div
+            class="flex-c-b tw-mb-6 tw-z-20 tw-relative tw-flex-col md:tw-flex-row tw-items-start md:tw-items-center">
+            <h2 class="tw-text-xl tw-text-white tw-font-medium tw-mb-3 md:tw-mb-0">This is the Title of the Document and
+              it
+              may be in
+              one</h2>
+            <div class="flex-c tw-gap-2">
+              <button mat-flat-button
+                class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-[#7b449f] tw-rounded-none tw-min-w-0 tw-py-2 tw-px-3">
+                <span class="tw-text-white tw-text-sm tw-block tw-py-px"><i class="sfi sfi-visibility"></i> </span>
+              </button>
+              <button mat-flat-button
+                class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-[#7b449f] tw-rounded-none tw-min-w-0 tw-py-2 tw-px-3">
+                <span class="tw-text-white tw-text-sm tw-block tw-py-px"><i class="sfi sfi-pen"></i> </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="flex-c-b tw-z-20 tw-relative tw-flex-wrap md:tw-flex-nowrap">
+            <div class="tw-capitalize tw-text-xs flex-c tw-space-x-2 tw-mb-3 md:tw-mb-0">
+              <img src="../../../assets/images/user.png" class="tw-w-7 tw-h-7 tw-rounded-full" alt="">
+              <div>
+                <span class="tw-font-normal tw-block tw-text-xs tw-text-white">Marawan A.Darwish</span>
+                <small class="tw-text-gray-200/60">Director</small>
+              </div>
+            </div>
+            <div class="flex-c tw-gap-2 tw-flex-wrap md:tw-flex-nowrap">
+              <button mat-flat-button
+                class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-transparent tw-border-2 tw-border-white tw-border-solid tw-rounded-none tw-py-1.5 tw-px-4">
+                <span class="tw-text-white tw-text-sm tw-block tw-py-px">Version Pref</span>
+              </button>
+              <button mat-flat-button
+                class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-transparent tw-border-2 tw-border-white tw-border-solid tw-rounded-none tw-py-1.5 tw-px-4">
+                <span class="tw-text-white tw-text-sm tw-block tw-py-px">Contributors</span>
+              </button>
+              <button mat-flat-button
+                class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-transparent tw-border-2 tw-border-white tw-border-solid tw-rounded-none tw-py-1.5 tw-px-4">
+                <span class="tw-text-white tw-text-sm tw-block tw-py-px">Assign Document</span>
+              </button>
+              <button mat-flat-button
+                class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-transparent tw-border-2 tw-border-white tw-border-solid tw-rounded-none tw-py-1.5 tw-px-4">
+                <span class="tw-text-white tw-text-sm tw-block tw-py-px">Approvals</span>
+              </button>
+              <button mat-flat-button
+                class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-transparent tw-border-2 tw-border-white tw-border-solid tw-rounded-none tw-py-0.5 tw-px-3 tw-min-w-0">
+                <span class="tw-text-white tw-text-xl tw-block tw-pt-px"><i class="sfi sfi-history1"></i> </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="tw-mt-5 flex-c tw-gap-2 tw-z-20 tw-relative tw-flex-wrap md:tw-flex-nowrap">
+            <div class="tw-bg-[#7b449f] tw-px-4 tw-py-1 tw-w-max">
+              <span class="tw-text-sm tw-capitalize tw-text-white">classification</span>
+            </div>
+            <div class="tw-bg-[#7b449f] tw-px-4 tw-py-1 tw-w-max">
+              <span class="tw-text-sm tw-capitalize tw-text-white">Level Name</span>
+            </div>
+            <div class="tw-bg-[#7b449f] tw-px-4 tw-py-1 tw-w-max flex-c tw-space-x-1">
+              <i class="tw-w-2 tw-h-2 tw-rounded-xl tw-bg-[#1CCED8] tw-block"></i>
+              <span class="tw-text-sm tw-capitalize tw-text-white">Draft</span>
+            </div>
+          </div>
+        </div>
+        <!-- tabs -->
+        <div class="tw-bg-white tw-p-5">
+          <mat-tab-group>
+            <mat-tab label="Purpose">
+              <div class="tw-mt-8">
+                <div class="tw-border tw-border-neutral-100">
+                  <div class="tw-bg-neutral-100 tw-px-4 tw-py-1.5 flex-c-b">
+                    <!-- header -->
+                    <h3 class="tw-text-xl tw-font-medium tw-mb-0 tw-capitalize">purpose</h3>
+                    <div class="flex-c tw-gap-2">
+                      <button mat-flat-button
+                        class="tw-w-auto tw-rounded-none tw-font-normal tw-leading-normal tw-bg-white tw-py-1.5 tw-px-4">
+                        <span class="tw-text-black tw-capitalize tw-text-sm tw-block tw-py-px">english</span>
+                      </button>
+                      <button mat-flat-button
+                        class="tw-w-auto tw-rounded-none tw-font-normal tw-leading-normal tw-bg-bgSTC tw-py-1.5 tw-px-4">
+                        <span class="tw-text-white tw-capitalize tw-text-sm tw-block tw-py-px">العربية</span>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- textArea -->
+                  <div class="tw-p-5">
+                    <p>TextArea here !</p>
+                  </div>
+                </div>
+                <!-- Actions -->
+                <div class="flex-c-b tw-mt-4 tw-flex-wrap md:tw-flex-nowrap tw-flex-col-reverse md:tw-flex-row">
+                  <div>
+                    <button mat-flat-button
+                      class="tw-w-auto tw-rounded-none tw-font-normal tw-leading-normal tw-bg-transparent tw-border-2 tw-border-solid tw-border-cyan-400 tw-py-2.5 tw-px-8 tw-min-h-[50px]">
+                      <span class="tw-text-cyan-400 tw-capitalize tw-text-sm tw-block tw-py-px">Save as draft</span>
+                    </button>
+                  </div>
+                  <div class="flex-c tw-gap-2 tw-mb-3 md:tw-mb-0">
+                    <button mat-flat-button
+                      class="tw-w-auto tw-rounded-none tw-font-normal tw-leading-normal tw-bg-transparent tw-border-2 tw-border-solid tw-border-coral tw-py-2.5 tw-px-8 tw-min-h-[50px]">
+                      <span class="tw-text-coral tw-capitalize tw-text-sm tw-block tw-py-px">Discard</span>
+                    </button>
+                    <button mat-flat-button
+                      class="tw-w-auto tw-rounded-none tw-font-normal tw-leading-normal tw-bg-[#8E9AA0] tw-py-2.5 tw-px-8 tw-min-h-[50px] tw-border-2 tw-border-solid tw-border-transparent">
+                      <span class="tw-text-white tw-capitalize tw-text-sm tw-block tw-py-px">submit</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </mat-tab>
+            <mat-tab label="Scope"></mat-tab>
+            <mat-tab label="Document Management"> </mat-tab>
+            <mat-tab label="Definitions"> </mat-tab>
+            <mat-tab label="References"> </mat-tab>
+            <mat-tab label="Policy Statement"> </mat-tab>
+            <mat-tab label="Auxiliary"></mat-tab>
+          </mat-tab-group>
+        </div>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="Add New">
+    <div class="tw-mt-6">
+      <!-- steps -->
+      <div class="tw-flex tw-items-baseline tw-justify-center tw-mb-7">
+        <div class="tw-w-fit tw-p-1.5">
+          <div class="flex-c-c tw-w-8 tw-h-8 tw-rounded tw-mb-2 tw-text-xs tw-bg-bgSTC tw-text-white tw-mx-auto">
+            01</div>
+          <span class="tw-text-xs tw-text-bgSTC tw-font-bold">DETAILS</span>
+        </div>
+        <div class="tw-border-t tw-border-gray-200 tw-w-20 tw-h-1"></div>
+        <div class="tw-w-fit tw-p-1.5">
+          <div class="flex-c-c tw-w-8 tw-h-8 tw-rounded tw-mb-2 tw-text-xs tw-text-gray-500 tw-mx-auto tw-bg-white">
+            02</div>
+          <span class="tw-text-microXs tw-text-[#8E9AA0] tw-font-medium tw-hidden md:tw-block">LOCATION</span>
+        </div>
+        <div class="tw-border-t tw-border-gray-200 tw-w-20 tw-h-1"></div>
+        <div class="tw-w-fit tw-p-1.5">
+          <div class="flex-c-c tw-w-8 tw-h-8 tw-rounded tw-mb-2 tw-text-xs tw-text-gray-500 tw-mx-auto tw-bg-white">
+            03</div>
+          <span class="tw-text-microXs tw-text-[#8E9AA0] tw-font-medium tw-hidden md:tw-block">AGENDA</span>
+        </div>
+        <div class="tw-border-t tw-border-gray-200 tw-w-20 tw-h-1"></div>
+        <div class="tw-w-fit tw-p-1.5">
+          <div class="flex-c-c tw-w-8 tw-h-8 tw-rounded tw-mb-2 tw-text-xs tw-text-gray-500 tw-mx-auto tw-bg-white">
+            03</div>
+          <span class="tw-text-microXs tw-text-[#8E9AA0] tw-font-medium tw-hidden md:tw-block">ACCESS PERMISSION</span>
+        </div>
+        <div class="tw-border-t tw-border-gray-200 tw-w-20 tw-h-1"></div>
+        <div class="tw-w-fit tw-p-1.5">
+          <div class="flex-c-c tw-w-8 tw-h-8 tw-rounded tw-mb-2 tw-text-xs tw-text-gray-500 tw-mx-auto tw-bg-white">
+            03</div>
+          <span class="tw-text-microXs tw-text-[#8E9AA0] tw-font-medium tw-hidden md:tw-block">REVIEW & APPROVAL
+            BY</span>
+        </div>
+        <div class="tw-border-t tw-border-gray-200 tw-w-20 tw-h-1"></div>
+        <div class="tw-w-fit tw-p-1.5">
+          <div class="flex-c-c tw-w-8 tw-h-8 tw-rounded tw-mb-2 tw-text-xs tw-text-gray-500 tw-mx-auto tw-bg-white">
+            03</div>
+          <span class="tw-text-microXs tw-text-[#8E9AA0] tw-font-medium tw-hidden md:tw-block">ACKNOWLEDGMENT</span>
+        </div>
+      </div>
+      <!-- content -->
+      <div>
+        <div class="tw-bg-white tw-p-5">
+          <div class="tw-border-b tw-border-gray-100 tw-pb-4 flex-c-b">
+            <h1 class="tw-capitalize tw-text-2xl tw-font-bold">Document Info</h1>
+            <button mat-flat-button class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-coral tw-py-2.5 tw-px-6">
+              <span class="tw-text-white tw-capitalize tw-text-sm tw-block tw-py-px"><i class="sfi sfi-plus"></i> add
+                new</span>
+            </button>
+          </div>
+          <div class="tw-mt-4">
+            <div class="flex-c-b tw-gap-4 tw-flex-col md:tw-flex-row">
+              <div class="tw-w-full sm:tw-w-auto select-box tw-flex-1">
+                <label class="tw-text-xs tw-font-medium tw-mb-2 tw-block">Document type</label>
+                <mat-form-field appearance="outline"
+                  class="tw-w-full tw-flex-1 tw-mt-4 sm:tw-mt-0 tw-pb-0 tw-bg-white tw-border tw-border-gray-100 tw-rounded-md">
+                  <mat-label class="tw-text-sm">Document type</mat-label>
+                  <span matSuffix class="sfi sfi-arrow-down tw-text-gray-900 tw-mt-[-5px] tw-block tw-text-xs"></span>
+                  <mat-select>
+                    <mat-option value="option">Option</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div class="tw-w-full sm:tw-w-auto select-box tw-flex-1">
+                <label class="tw-text-xs tw-font-medium tw-mb-2 tw-block">Classification</label>
+                <mat-form-field appearance="outline"
+                  class="tw-w-full tw-flex-1 tw-mt-4 sm:tw-mt-0 tw-pb-0 tw-bg-white tw-border tw-border-gray-100 tw-rounded-md">
+                  <mat-label class="tw-text-sm">Choose Classification</mat-label>
+                  <span matSuffix class="sfi sfi-arrow-down tw-text-gray-900 tw-mt-[-5px] tw-block tw-text-xs"></span>
+                  <mat-select>
+                    <mat-option value="option">Option</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+            </div>
+            <!-- toggle -->
+            <div class="toggle-c tw-mt-3 tw-mb-4">
+              <mat-slide-toggle>
+                <span class="tw-text-sm">Policy related to authority</span>
+              </mat-slide-toggle>
+            </div>
+            <!-- radio-buttons -->
+            <div class="radio-c tw-border-t tw-border-gray-100 tw-pt-4">
+              <label class="tw-text-xs tw-font-medium tw-mb-4 tw-block">Content Language</label>
+              <mat-radio-group aria-label="Select an option" class="tw-space-x-4">
+                <mat-radio-button value="1"
+                  class="tw-text-xs tw-border tw-border-gray-100 tw-p-3 tw-rounded-sm">Bilingual</mat-radio-button>
+                <mat-radio-button value="2"
+                  class="tw-text-xs tw-border tw-border-gray-100 tw-p-3 tw-rounded-sm">Arabic</mat-radio-button>
+                <mat-radio-button value="3"
+                  class="tw-text-xs tw-border tw-border-gray-100 tw-p-3 tw-rounded-sm">English</mat-radio-button>
+              </mat-radio-group>
+            </div>
+            <div class="flex-c-b tw-gap-4 tw-mt-5 tw-flex-col md:tw-flex-row">
+              <div class="tw-w-full sm:tw-w-auto select-box tw-flex-1">
+                <label class="tw-text-xs tw-font-medium tw-mb-2 tw-block">Arabic <span
+                    class="tw-text-coral tw-italic tw-text-microXs tw-font-normal">Should be at least 3 character</span>
+                </label>
+                <mat-form-field appearance="outline"
+                  class="tw-w-full tw-flex-1 tw-mt-4 sm:tw-mt-0 tw-pb-0 tw-bg-white tw-border tw-border-gray-100 tw-rounded-sm">
+                  <input type="text" class="placeholder:tw-text-xs" placeholder="Write Name Here" matInput>
+                </mat-form-field>
+              </div>
+              <div class="tw-w-full sm:tw-w-auto select-box tw-flex-1">
+                <label class="tw-text-xs tw-font-medium tw-mb-2 tw-block">English <span
+                    class="tw-text-coral tw-italic tw-text-microXs tw-font-normal">Should be at least 3 character</span>
+                </label>
+                <mat-form-field appearance="outline"
+                  class="tw-w-full tw-flex-1 tw-mt-4 sm:tw-mt-0 tw-pb-0 tw-bg-white tw-border tw-border-gray-100 tw-rounded-sm">
+                  <input type="text" class="placeholder:tw-text-xs" placeholder="Write Name Here" matInput>
+                </mat-form-field>
+              </div>
+            </div>
+            <!-- radio-buttons -->
+            <div class="radio-c tw-border-t tw-border-gray-100 tw-pt-4 tw-mt-4">
+              <label class="tw-text-xs tw-font-medium tw-mb-2 tw-block">PDF Layout</label>
+              <mat-radio-group aria-label="Select an option" class="tw-space-x-4">
+                <mat-radio-button value="1"
+                  class="tw-text-xs tw-border tw-border-gray-100 tw-py-3 tw-rounded-sm">Portrait</mat-radio-button>
+                <mat-radio-button value="2"
+                  class="tw-text-xs tw-border tw-border-gray-100 tw-py-3 tw-rounded-sm">Portrait</mat-radio-button>
+              </mat-radio-group>
+            </div>
+            <div class="flex-c-b tw-gap-4 tw-mt-5 tw-flex-col md:tw-flex-row">
+              <div class="tw-w-full sm:tw-w-auto select-box tw-flex-1">
+                <label class="tw-text-xs tw-font-medium tw-mb-2 tw-block">Document Owner Level</label>
+                <mat-form-field appearance="outline"
+                  class="tw-w-full tw-flex-1 tw-mt-4 sm:tw-mt-0 tw-pb-0 tw-bg-white tw-border tw-border-gray-100 tw-rounded-sm">
+                  <span matSuffix class="sfi sfi-search tw-text-gray-400 tw-mt-[-5px]"></span>
+                  <input type="text" class="placeholder:tw-text-xs" placeholder="Search By Name/Email" matInput>
+                </mat-form-field>
+              </div>
+              <div class="tw-w-full sm:tw-w-auto select-box tw-flex-1">
+                <label class="tw-text-xs tw-font-medium tw-mb-2 tw-block">Document Owner Level</label>
+                <mat-form-field appearance="outline"
+                  class="tw-w-full tw-flex-1 tw-mt-4 sm:tw-mt-0 tw-pb-0 tw-bg-white tw-border tw-border-gray-100 tw-rounded-md">
+                  <mat-label class="tw-text-sm">Document Owner Level</mat-label>
+                  <span matSuffix class="sfi sfi-arrow-down tw-text-gray-900 tw-mt-[-5px] tw-block tw-text-xs"></span>
+                  <mat-select>
+                    <mat-option value="option">Option</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- actions -->
+      <div class="tw-bg-white tw-px-5 tw-py-6 tw-space-x-2 tw-w-full flex-c-b tw-mt-4">
+        <button mat-flat-button
+          class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-transparent tw-border tw-border-solid tw-border-transparent tw-py-1.5 tw-px-4">
+          <span class="tw-text-gray-500 tw-capitalize tw-text-sm tw-block tw-py-1">Cancel</span>
+        </button>
+        <button mat-flat-button class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-coral 
+          tw-py-1.5 tw-px-6 tw-border tw-border-solid tw-border-transparent
+          ">
+          <span class="tw-text-white tw-capitalize tw-text-sm tw-block tw-py-1 tw-space-x-3">
+            <span>next</span> <span class="sfi sfi-arrow-right tw-text-microXs"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="Matrix">
+    <div>
+      <div class="tw-bg-white tw-p-5">
+        <div class="tw-border-b tw-border-gray-100 tw-pb-4 flex-c-b">
+          <h1 class="tw-capitalize tw-text-2xl tw-font-bold">Matrix</h1>
+          <button mat-flat-button (click)="openAddMatrix()"
+            class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-coral tw-py-2.5 tw-px-6">
+            <span class="tw-text-white tw-capitalize tw-text-sm tw-block tw-py-px"><i
+                class="sfi sfi-plus tw-text-xs"></i> add new </span>
+          </button>
+        </div>
+      </div>
+      <!-- matrix-expansion -->
+      <div class="tw-bg-white tw-p-5 tw-space-y-3">
+        <!-- empty-status -->
+        <div>
+          <div class="tw-text-center tw-space-y-4 tw-p-10">
+            <img src="../../../assets/images/empty-status.png" class="tw-w-20 tw-h-20 tw-m-auto" alt="">
+            <p>no matrix added yet</p>
+            <button mat-flat-button class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-coral tw-py-2.5 tw-px-6">
+              <span class="tw-text-white tw-capitalize tw-text-sm tw-block tw-py-px"><i class="sfi sfi-plus"></i> add
+                new</span>
+            </button>
+          </div>
+        </div>
+        <div class="tw-border tw-border-gray-200 tw-rounded">
+          <mat-expansion-panel (opened)="panelOpenState = true">
+            <mat-expansion-panel-header class="tw-h-auto md:tw-h-14 tw-bg-bgSTC tw-px-7 dark-header tw-py-4 md:tw-py-0">
+              <mat-panel-title class="tw-text-sm flex-c-b">
+                <div class="flex-c tw-flex-3 tw-gap-8">
+                  <div
+                    class="flex-box tw-gap-2 tw-font-normal tw-text-bgSTC tw-text-xs tw-items-start md:tw-items-center">
+                    <i class="tw-text-gray-400">Name</i>
+                    <h4 class="tw-text-white tw-mb-0">Matrix Name Here</h4>
+                  </div>
+                  <div class="tw-hidden md:tw-block tw-bg-gray-700 tw-h-4 tw-w-px"></div>
+                  <div class="tw-hidden md:tw-flex flex-box tw-gap-2 tw-font-normal tw-text-bgSTC tw-text-xs">
+                    <i class="tw-text-gray-400">Organization</i>
+                    <h4 class="tw-text-[#00C48C] tw-mb-0">Classification1</h4>
+                  </div>
+                </div>
+                <div class="flex-c-e tw-gap-2 md:tw-flex-2 tw-hidden md:tw-flex">
+                  <button mat-flat-button class="tw-bg-emerald-100 tw-w-10 tw-h-10 tw-min-w-0 tw-px-0">
+                    <span class="tw-text-emerald-500 tw-text-sm tw-block tw-py-px">
+                      <i class="sfi sfi-pen"></i>
+                    </span>
+                  </button>
+                  <button mat-flat-button class="tw-bg-white tw-w-10 tw-h-10 tw-min-w-0 tw-px-0">
+                    <span class="tw-text-gray-600 tw-text-sm tw-block tw-py-px">
+                      <i class="sfi sfi-url-o"></i>
+                    </span>
+                  </button>
+                  <button mat-flat-button class="tw-bg-coral tw-w-10 tw-h-10 tw-min-w-0 tw-px-0">
+                    <span class="tw-text-white tw-text-sm tw-block tw-py-px">
+                      <i class="sfi sfi-pen"></i>
+                    </span>
+                  </button>
+                </div>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <!-- content -->
+            <div class="tw-bg-white tw-p-5 tw-border tw-border-gray-100 ">
+              <!-- chips-readOnly -->
+              <div class="flex-c tw-gap-8 tw-flex-col md:tw-flex-row">
+                <div class="tw-text-xs flex-box tw-gap-3">
+                  <span class="tw-text-gray-400">Position</span>
+                  <div class="tw-rounded-full tw-w-max tw-px-2 tw-bg-gray-100 tw-py-0.5">
+                    <span class="tw-inline-block">Requester</span>
+                  </div>
+                  <div class="tw-rounded-full tw-w-max tw-px-2 tw-bg-gray-100 tw-py-0.5">
+                    <span class="tw-inline-block">Sm</span>
+                  </div>
+                </div>
+                <div class="tw-hidden md:tw-block tw-bg-gray-200 tw-h-4 tw-w-px"></div>
+                <div class="tw-text-xs flex-box tw-gap-3">
+                  <span class="tw-text-gray-400">Authority Limit Type</span>
+                  <div class="tw-rounded-full tw-w-max tw-px-2 tw-bg-gray-100 tw-py-0.5">
+                    <span class="tw-inline-block">Requester</span>
+                  </div>
+                  <div class="tw-rounded-full tw-w-max tw-px-2 tw-bg-gray-100 tw-py-0.5">
+                    <span class="tw-inline-block">Sm</span>
+                  </div>
+                </div>
+              </div>
+              <!-- sorting -->
+              <div class="tw-mt-6">
+                <div class="flex-box tw-gap-3">
+                  <h3 class="tw-text-sm tw-font-medium tw-text-textsColorPurple">Positions Sorting</h3>
+                  <hr class="tw-flex-grow tw-border-t tw-border-gray-200">
+                </div>
+              </div>
+              <div class="flex-box tw-flex-wrap tw-mt-4 tw-items-start lg:tw-items-center">
+                <div class="example-box tw-mb-3 tw-w-full md:tw-w-4/12" *ngFor="let movie of movies;let i = index">
+                  <div class="flex-c-s tw-gap-3">
+                    <span
+                      class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-bgSTC tw-text-white flex-c-c tw-text-microXs">{{i}}</span>
+                    <div class="tw-space-x-3">
+                      <span class="tw-text-xs">{{movie}}</span>
+                      <span class="tw-text-microXs tw-text-gray-400">- Org name</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- matrix table -->
+              <div class="tw-mt-6">
+                <div class="flex-box tw-gap-3">
+                  <h3 class="tw-text-sm tw-font-medium tw-text-textsColorPurple">Matrix</h3>
+                  <hr class="tw-flex-grow tw-border-t tw-border-gray-200">
+                  <button mat-flat-button
+                    class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-coral tw-py-2.5 tw-px-6">
+                    <span class="tw-text-white tw-capitalize tw-text-sm tw-block tw-py-px"><i
+                        class="sfi sfi-plus tw-text-xs"></i> add new </span>
+                  </button>
+                </div>
+              </div>
+              <!-- matrix-table -->
+              <div class="tw-overflow-x-auto tw-mt-5">
+                <section class="tw-table tw-w-full tw-whitespace-nowrap">
+                  <header class="tw-table-row tw-bg-bgSTC">
+                    <div
+                      class="tw-table-cell tw-text-white tw-font-medium tw-text-xs tw-py-2 tw-px-4 tw-border-r tw-border-gray-200 tw-text-center">
+                      Authority limit
+                    </div>
+                    <div
+                      class="tw-table-cell tw-text-white tw-font-medium tw-text-xs tw-py-2 tw-px-4 tw-border-r tw-border-gray-200 tw-text-center">
+                      Conditions
+                    </div>
+                    <div
+                      class="tw-table-cell tw-text-white tw-font-medium tw-text-xs tw-py-2 tw-px-4 tw-border-r tw-border-gray-200 tw-text-center">
+                      Concerned Department
+                    </div>
+                    <div class="tw-table-cell tw-text-white tw-font-medium tw-text-xs tw-py-2 tw-px-4 tw-text-center">
+                      Specific Department
+                    </div>
+                    <div class="tw-table-cell tw-bg-white">
+
+                    </div>
+                  </header>
+                  <!-- content -->
+                  <div class="tw-table-row tw-bg-white tw-w-full tw-rounded tw-mb-3">
+                    <div class="tw-table-cell tw-border-r tw-border-gray-200">
+                      <div
+                        class="flex-c-b tw-bg-lightPurple tw-py-1 tw-text-bgSTC tw-text-xs tw-divide-x tw-divide-gray-100 rtl:tw-divide-x-reverse">
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">From</span>
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">To</span>
+                      </div>
+                      <div
+                        class="tw-font-bold flex-c-b tw-bg-white tw-py-1 tw-text-gray-800 tw-text-xs tw-divide-x tw-divide-gray-100 tw-border-b tw-border-gray-100 tw-min-h-30 rtl:tw-divide-x-reverse ">
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">0</span>
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">1 M</span>
+                      </div>
+                      <div
+                        class="tw-font-bold flex-c-b tw-bg-white tw-py-1 tw-text-gray-800 tw-text-xs tw-divide-x tw-divide-gray-100 tw-min-h-30 rtl:tw-divide-x-reverse ">
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">0</span>
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">1 M</span>
+                      </div>
+                    </div>
+                    <div class="tw-table-cell tw-border-r tw-border-gray-200">
+                      <div
+                        class="flex-box tw-bg-lightPurple tw-px-4 tw-py-1 tw-text-bgSTC tw-text-xs tw-border-b tw-border-gray-100">
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">Condition</span>
+                      </div>
+                      <div
+                        class="flex-box tw-bg-white tw-px-4 tw-py-1 tw-text-gray-800 tw-text-xs tw-border-b tw-border-gray-100">
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">Develop</span>
+                      </div>
+                    </div>
+                    <div class="tw-table-cell tw-border-r tw-border-gray-200">
+                      <div
+                        class="flex-c-b tw-bg-lightPurple tw-py-1 tw-text-bgSTC tw-text-xs tw-divide-x tw-divide-gray-100 rtl:tw-divide-x-reverse">
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">SM</span>
+                        <!-- <span class="tw-inline-block tw-bg-white tw-w-px tw-h-5"></span> -->
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">DIR</span>
+                        <!-- <span class="tw-inline-block tw-bg-white tw-w-px tw-h-5"></span> -->
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">GM</span>
+                        <!-- <span class="tw-inline-block tw-bg-white tw-w-px tw-h-5"></span> -->
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">VP</span>
+                      </div>
+                      <div
+                        class="flex-c-b tw-bg-white tw-py-1 tw-text-gray-800 tw-text-xs tw-divide-x tw-divide-gray-100 tw-border-b tw-border-gray-100 tw-min-h-30 rtl:tw-divide-x-reverse ">
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">Endorse</span>
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">Develop</span>
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">Endorse</span>
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">Develop</span>
+                      </div>
+                    </div>
+                    <div class="tw-table-cell">
+                      <div
+                        class="flex-c-b tw-bg-lightPurple tw-py-1 tw-text-bgSTC tw-text-xs tw-divide-x tw-divide-gray-100 rtl:tw-divide-x-reverse">
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">SM</span>
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">DIR</span>
+                      </div>
+                      <div
+                        class="flex-c-b tw-bg-white tw-py-1 tw-text-gray-800 tw-text-xs tw-divide-x tw-divide-gray-100 tw-border-b tw-border-gray-100 tw-min-h-30 rtl:tw-divide-x-reverse ">
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">Develop</span>
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">Endorse</span>
+                      </div>
+                    </div>
+                    <div class="tw-table-cell">
+                      <div
+                        class="flex-c-b tw-bg-white tw-py-1 tw-text-bgSTC tw-text-xs tw-divide-x tw-divide-gray-100 rtl:tw-divide-x-reverse">
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2"></span>
+                      </div>
+                      <div
+                        class="flex-c-b tw-bg-white tw-py-1 tw-text-gray-800 tw-text-xs tw-divide-x tw-divide-gray-100 tw-min-h-30 rtl:tw-divide-x-reverse ">
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">
+                          <button mat-flat-button
+                            class="tw-w-auto tw-min-w-0 tw-font-normal tw-leading-normal tw-bg-coral tw-py-0.5 tw-px-[10px] tw-min-h-0">
+                            <span class="tw-text-white tw-capitalize tw-text-sm tw-block tw-py-px"><i
+                                class="sfi sfi-trash tw-text-xs"></i> </span>
+                          </button>
+                        </span>
+                      </div>
+                      <div
+                        class="flex-c-b tw-bg-white tw-py-1 tw-text-gray-800 tw-text-xs tw-divide-x tw-divide-gray-100 tw-min-h-30 rtl:tw-divide-x-reverse ">
+                        <span class="tw-block tw-text-center tw-w-full tw-px-2">
+                          <button mat-flat-button
+                            class="tw-w-auto tw-min-w-0 tw-font-normal tw-leading-normal tw-bg-coral tw-py-0.5 tw-px-[10px] tw-min-h-0">
+                            <span class="tw-text-white tw-capitalize tw-text-sm tw-block tw-py-px"><i
+                                class="sfi sfi-trash tw-text-xs"></i> </span>
+                          </button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </mat-expansion-panel>
+        </div>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="Review & Approval by">
+    <div class="tw-bg-white tw-p-5">
+      <div class="tw-border-b tw-border-gray-100 tw-pb-4 flex-c-b">
+        <h1 class="tw-capitalize tw-text-2xl tw-font-bold">Review & Approval by</h1>
+        <button mat-flat-button (click)="openAddMatrix()"
+          class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-coral tw-py-2.5 tw-px-6">
+          <span class="tw-text-white tw-capitalize tw-text-sm tw-block tw-py-px"><i class="sfi sfi-plus tw-text-xs"></i>
+            add new </span>
+        </button>
+      </div>
+    </div>
+    <!-- empty-status -->
+    <div class="tw-bg-white tw-p-5">
+      <div class="tw-text-center tw-space-y-4 tw-p-10">
+        <img src="../../../assets/images/profile-v.png" class="tw-w-20 tw-h-20 tw-m-auto" alt="">
+        <p>there is no users adedd yet</p>
+        <button mat-flat-button class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-coral tw-py-2.5 tw-px-6">
+          <span class="tw-text-white tw-capitalize tw-text-sm tw-block tw-py-px"><i class="sfi sfi-plus"></i> add
+            new</span>
+        </button>
+      </div>
+      <!-- Review-table -->
+      <div>
+        <span class="tw-text-base tw-text-textsColorPurple">Added User</span>
+      </div>
+      <div class="tw-overflow-x-auto tw-mt-3">
+        <section class="tw-table tw-w-full tw-whitespace-nowrap">
+          <header class="tw-table-row tw-bg-gray-100">
+            <div class="tw-table-cell tw-text-gary-700 tw-font-medium tw-text-xs tw-px-6 tw-py-4 tw-text-left">
+              User Name
+            </div>
+            <div class="tw-table-cell tw-text-gary-700 tw-font-medium tw-text-xs tw-p-4 tw-text-left">
+              User Category
+            </div>
+            <div class="tw-table-cell tw-text-gary-700 tw-font-medium tw-text-xs tw-p-4 tw-text-left">
+              User Position
+            </div>
+            <div class="tw-table-cell tw-text-gary-700 tw-font-medium tw-text-xs tw-p-4 tw-text-left">
+              Owner position
+            </div>
+            <div class="tw-table-cell tw-text-gary-700 tw-font-medium tw-text-xs tw-p-4 tw-text-left">
+              Arabic
+            </div>
+            <div class="tw-table-cell tw-text-gary-700 tw-font-medium tw-text-xs tw-p-4 tw-text-left">
+              English
+            </div>
+            <div class="tw-table-cell tw-text-gary-700 tw-font-medium tw-text-xs tw-p-4 tw-text-left">
+
+            </div>
+          </header>
+          <!-- content -->
+          <div class="tw-table-row tw-bg-white tw-w-full tw-rounded tw-mb-3">
+            <div class="tw-table-cell">
+              <div class="flex-box tw-gap-1 tw-py-3">
+                <div class="tw-w-0.5 tw-h-10 tw-bg-coral tw-rounded-md"></div>
+                <div class="tw-capitalize tw-text-xs flex-c tw-space-x-2 tw-px-5">
+                  <img src="../../../assets/images/user.png" class="tw-w-7 tw-h-7 tw-rounded-full" alt="">
+                  <div>
+                    <span class="tw-font-normal tw-block tw-text-xs tw-text-gray-800">Marawan A.Darwish</span>
+                    <small class="tw-text-gray-400 tw-block">Director</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tw-table-cell tw-align-middle">
+              <div class="flex-box tw-px-4 tw-py-1 tw-text-bgSTC tw-text-xs">
+                <span class="tw-block tw-text-left tw-w-full">Archive
+                  <span
+                    class="sfi sfi-check-s tw-inline-block tw-w-3 tw-h-3 tw-rounded-full tw-bg-emerald-500 tw-text-white"></span>
+                </span>
+              </div>
+            </div>
+            <div class="tw-table-cell tw-align-middle">
+              <div class="flex-box tw-px-4 tw-py-1 tw-text-bgSTC tw-text-xs">
+                <span class="tw-block  tw-text-left tw-w-full">Archive
+                  <span
+                    class="sfi sfi-check-s tw-inline-block tw-w-3 tw-h-3 tw-rounded-full tw-bg-emerald-500 tw-text-white"></span>
+                </span>
+              </div>
+            </div>
+            <div class="tw-table-cell tw-align-middle">
+              <div class="tw-px-4">
+                <div class="tw-rounded-full tw-w-max tw-px-2 tw-bg-emerald-100 tw-py-0.5">
+                  <span class="tw-block tw-text-emerald-500 tw-text-xs">Active</span>
+                </div>
+              </div>
+            </div>
+            <div class="tw-table-cell tw-align-middle">
+              <div class="tw-px-4">
+                <span class="tw-text-xs tw-text-[#B7B7B7]">Arabic Name</span>
+              </div>
+            </div>
+            <div class="tw-table-cell tw-align-middle">
+              <div class="tw-px-4">
+                <span class="tw-text-xs tw-text-[#B7B7B7]">English Name</span>
+              </div>
+            </div>
+            <div class="tw-table-cell tw-align-middle">
+              <div class="tw-px-4">
+                <button mat-flat-button
+                  class="tw-w-auto tw-min-w-0 tw-font-normal tw-leading-normal tw-bg-coral tw-py-0.5 tw-px-[10px]">
+                  <span class="tw-text-white tw-capitalize tw-text-sm tw-block tw-py-px"><i
+                      class="sfi sfi-trash tw-text-xs"></i> </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="tw-table-row tw-bg-white tw-w-full tw-rounded tw-mb-3">
+            <div class="tw-table-cell tw-border-t tw-border-gray-100">
+              <div class="flex-box tw-gap-1 tw-py-3">
+                <div class="tw-w-0.5 tw-h-10 tw-bg-coral tw-rounded-md"></div>
+                <div class="tw-capitalize tw-text-xs flex-c tw-space-x-2 tw-px-5">
+                  <img src="../../../assets/images/user.png" class="tw-w-7 tw-h-7 tw-rounded-full" alt="">
+                  <div>
+                    <span class="tw-font-normal tw-block tw-text-xs tw-text-gray-800">Marawan A.Darwish</span>
+                    <small class="tw-text-gray-400 tw-block">Director</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tw-table-cell tw-align-middle tw-border-t tw-border-gray-100">
+              <div class="flex-box tw-px-4 tw-py-1 tw-text-bgSTC tw-text-xs">
+                <span class="tw-block tw-text-left tw-w-full">Archive
+                  <span
+                    class="sfi sfi-check-s tw-inline-block tw-w-3 tw-h-3 tw-rounded-full tw-bg-emerald-500 tw-text-white"></span>
+                </span>
+              </div>
+            </div>
+            <div class="tw-table-cell tw-align-middle tw-border-t tw-border-gray-100">
+              <div class="flex-box tw-px-4 tw-py-1 tw-text-bgSTC tw-text-xs">
+                <span class="tw-block  tw-text-left tw-w-full">Archive
+                  <span
+                    class="sfi sfi-check-s tw-inline-block tw-w-3 tw-h-3 tw-rounded-full tw-bg-emerald-500 tw-text-white"></span>
+                </span>
+              </div>
+            </div>
+            <div class="tw-table-cell tw-align-middle tw-border-t tw-border-gray-100">
+              <div class="tw-px-4">
+                <div class="tw-rounded-full tw-w-max tw-px-2 tw-bg-emerald-100 tw-py-0.5">
+                  <span class="tw-block tw-text-emerald-500 tw-text-xs">Active</span>
+                </div>
+              </div>
+            </div>
+            <div class="tw-table-cell tw-align-middle tw-border-t tw-border-gray-100">
+              <div class="tw-px-4">
+                <span class="tw-text-xs tw-text-[#B7B7B7]">Arabic Name</span>
+              </div>
+            </div>
+            <div class="tw-table-cell tw-align-middle tw-border-t tw-border-gray-100">
+              <div class="tw-px-4">
+                <span class="tw-text-xs tw-text-[#B7B7B7]">English Name</span>
+              </div>
+            </div>
+            <div class="tw-table-cell tw-align-middle tw-border-t tw-border-gray-100">
+              <div class="tw-px-4">
+                <button mat-flat-button
+                  class="tw-w-auto tw-min-w-0 tw-font-normal tw-leading-normal tw-bg-coral tw-py-0.5 tw-px-[10px]">
+                  <span class="tw-text-white tw-capitalize tw-text-sm tw-block tw-py-px"><i
+                      class="sfi sfi-trash tw-text-xs"></i> </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Acknowledgment -->
+      <div class="tw-py-5">
+        <mat-checkbox class="tw-text-xs tw-whitespace-pre">I agree , I have read s simply dummy text of the printing and
+          typesetting
+          industry. Lorem Ipsum has been the industry's</mat-checkbox>
+      </div>
+      <!-- Documents-Templates -->
+      <div class="tw-overflow-x-auto tw-mt-3">
+        <section class="tw-table tw-w-full tw-whitespace-nowrap">
+          <!-- content -->
+          <div class="tw-table-row tw-bg-white tw-w-full tw-rounded tw-mb-3">
+            <div class="tw-table-cell tw-border-b tw-border-gray-100">
+              <div class="flex-box tw-py-3">
+                <div class="tw-w-0.5 tw-h-10 tw-bg-coral tw-rounded-md"></div>
+                <div class="flex-box">
+                  <div class="tw-border-r tw-border-gray-100 tw-px-5">
+                    <span class="sfi sfi-folder tw-text-coral tw-text-4xl"></span>
+                  </div>
+                  <div class="tw-px-5 flex-box tw-gap-1">
+                    <div class="">
+                      <span class="tw-text-xs tw-text-gray-400 tw-block">English Name</span>
+                      <span class="tw-text-xs tw-text-gray-400 tw-block">Arabic Name</span>
+                    </div>
+                    <div>
+                      <span class="tw-text-sm tw-text-textsColorPurple tw-block">Document Name Here</span>
+                      <span class="tw-text-sm tw-text-textsColorPurple tw-block">الاسم العربى هنا</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tw-table-cell tw-align-middle tw-border-b tw-border-gray-100">
+              <div class="flex-box">
+                <div class="flex-box tw-border-r tw-border-gray-100 tw-px-4 tw-gap-1">
+                  <span class="tw-text-xs tw-text-gray-500">English Name</span>
+                  <span class="tw-w-1 tw-h-1 tw-bg-coral tw-rounded-3xl"></span>
+                  <span class="tw-text-xs tw-text-black">3</span>
+                </div>
+                <div class="flex-box tw-border-r tw-border-gray-100 tw-px-4 tw-gap-1">
+                  <span class="tw-text-xs tw-text-gray-500">Published date</span>
+                  <span class="tw-w-1 tw-h-1 tw-bg-coral tw-rounded-3xl"></span>
+                  <span class="tw-text-xs tw-text-black">20/11/2022</span>
+                </div>
+                <div class="tw-text-xs flex-box tw-gap-3 tw-px-4">
+                  <span class="tw-text-gray-400">Status</span>
+                  <div class="tw-rounded-full tw-w-max tw-px-2 tw-bg-emerald-100 tw-py-0.5">
+                    <span class="tw-block tw-text-emerald-500">Requester</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tw-table-cell tw-align-middle tw-border-b tw-border-gray-100">
+              <div class="flex-c-e tw-gap-2">
+                <button mat-flat-button (click)="openAddMatrix()"
+                  class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-bgSTC tw-py-1.5 tw-px-4">
+                  <span class="tw-text-white tw-capitalize tw-text-xs flex-box tw-gap-1 tw-py-px"><i
+                      class="sfi sfi-visibility tw-text-xs"></i> view </span>
+                </button>
+                <button mat-flat-button (click)="openAddMatrix()"
+                  class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-coral tw-py-1.5 tw-px-4">
+                  <span class="tw-text-white tw-capitalize tw-text-xs flex-box tw-gap-1 tw-py-px"><i
+                      class="sfi sfi-plus tw-text-xs"></i> add new </span>
+                </button>
+                <div class="tw-mt-[-3px]">
+                  <button mat-button [matMenuTriggerFor]="menu" class="tw-min-w-0"><span
+                      class="sfi sfi-dots tw-text-base"></span></button>
+                  <mat-menu #menu="matMenu">
+                    <button mat-menu-item>Item 1</button>
+                    <button mat-menu-item>Item 2</button>
+                  </mat-menu>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tw-table-row tw-bg-white tw-w-full tw-rounded tw-mb-3">
+            <div class="tw-table-cell tw-border-b tw-border-gray-100">
+              <div class="flex-box tw-py-3">
+                <div class="tw-w-0.5 tw-h-10 tw-bg-coral tw-rounded-md"></div>
+                <div class="flex-box">
+                  <div class="tw-border-r tw-border-gray-100 tw-px-5">
+                    <span class="sfi sfi-folder tw-text-coral tw-text-4xl"></span>
+                  </div>
+                  <div class="tw-px-5 flex-box tw-gap-1">
+                    <div class="">
+                      <span class="tw-text-xs tw-text-gray-400 tw-block">English Name</span>
+                      <span class="tw-text-xs tw-text-gray-400 tw-block">Arabic Name</span>
+                    </div>
+                    <div>
+                      <span class="tw-text-sm tw-text-textsColorPurple tw-block">Document Name Here</span>
+                      <span class="tw-text-sm tw-text-textsColorPurple tw-block">الاسم العربى هنا</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tw-table-cell tw-align-middle tw-border-b tw-border-gray-100">
+              <div class="flex-box">
+                <div class="flex-box tw-border-r tw-border-gray-100 tw-px-4 tw-gap-1">
+                  <span class="tw-text-xs tw-text-gray-500">English Name</span>
+                  <span class="tw-w-1 tw-h-1 tw-bg-coral tw-rounded-3xl"></span>
+                  <span class="tw-text-xs tw-text-black">3</span>
+                </div>
+                <div class="flex-box tw-border-r tw-border-gray-100 tw-px-4 tw-gap-1">
+                  <span class="tw-text-xs tw-text-gray-500">Published date</span>
+                  <span class="tw-w-1 tw-h-1 tw-bg-coral tw-rounded-3xl"></span>
+                  <span class="tw-text-xs tw-text-black">20/11/2022</span>
+                </div>
+                <div class="tw-text-xs flex-box tw-gap-3 tw-px-4">
+                  <span class="tw-text-gray-400">Status</span>
+                  <div class="tw-rounded-full tw-w-max tw-px-2 tw-bg-emerald-100 tw-py-0.5">
+                    <span class="tw-block tw-text-emerald-500">Requester</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tw-table-cell tw-align-middle tw-border-b tw-border-gray-100">
+              <div class="flex-c-e tw-gap-2">
+                <button mat-flat-button (click)="openAddMatrix()"
+                  class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-bgSTC tw-py-1.5 tw-px-4">
+                  <span class="tw-text-white tw-capitalize tw-text-xs flex-box tw-gap-1 tw-py-px"><i
+                      class="sfi sfi-visibility tw-text-xs"></i> view </span>
+                </button>
+                <button mat-flat-button (click)="openAddMatrix()"
+                  class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-coral tw-py-1.5 tw-px-4">
+                  <span class="tw-text-white tw-capitalize tw-text-xs flex-box tw-gap-1 tw-py-px"><i
+                      class="sfi sfi-plus tw-text-xs"></i> add new </span>
+                </button>
+                <div class="tw-mt-[-3px]">
+                  <button mat-button [matMenuTriggerFor]="menu" class="tw-min-w-0"><span
+                      class="sfi sfi-dots tw-text-base"></span></button>
+                  <mat-menu #menu="matMenu">
+                    <button mat-menu-item>Item 1</button>
+                    <button mat-menu-item>Item 2</button>
+                  </mat-menu>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+  </mat-tab>
+</mat-tab-group>
+
+
+<!-- Dialogs -->
+<div class="tw-m-5">
+  <button (click)="openDialog()" class="tw-w-auto tw-rounded-none tw-font-normal tw-leading-normal tw-bg-green-600 
+  tw-py-2.5 tw-px-8 tw-text-white">Open
+    dialog</button>
+  <ng-template #requestDialog>
+    <div class="tw-p-5 tw-bg-white">
+      <div class="tw-w-16 tw-h-16 tw-rounded-full tw-bg-yellow-400 tw-mb-3 tw-m-auto flex-c-c">
+        <i class="sfi sfi-hourglass_empty tw-text-3xl tw-text-white"></i>
+      </div>
+      <div class="tw-text-center">
+        <p class="tw-text-xl tw-mb-2">Your Doc request has been submitted Successfully</p>
+        <span class="tw-text-sm tw-text-[#8E9AA0] tw-block tw-font-normal">Please wait the approval</span>
+        <button mat-flat-button
+          class="tw-w-auto tw-rounded-none tw-font-normal tw-leading-normal tw-bg-coral tw-py-2.5 tw-px-12 tw-mt-6">
+          <span class="tw-text-white tw-capitalize tw-text-sm tw-block tw-py-px">close</span>
+        </button>
+      </div>
+    </div>
+  </ng-template>
+</div>
+
+<!-- add matrix -->
+<div>
+  <ng-template #addMatrix>
+    <div class="tw-pb-24">
+      <header class="tw-bg-bgSTC tw-px-4 tw-py-2.5 tw-mb-6">
+        <div class="flex-c-b tw-gap-2 tw-w-full">
+          <mat-form-field appearance="outline"
+            class="tw-w-full tw-flex-1 tw-mt-4 sm:tw-mt-0 tw-pb-0 tw-bg-[#1f0737] tw-rounded-sm">
+            <input type="text" class="placeholder:tw-text-xs placeholder:tw-text-gray-400 tw-text-white"
+              placeholder="Search Here" matInput>
+          </mat-form-field>
+          <button mat-button class="tw-min-w-0">
+            <span class="sfi sfi-plus tw-text-white"></span>
+          </button>
+        </div>
+      </header>
+      <main class="tw-px-5 tw-space-y-3">
+        <div>
+          <div class="flex-box tw-gap-3">
+            <h3 class="tw-text-sm tw-font-medium tw-text-textsColorPurple">Concerned Department</h3>
+            <hr class="tw-flex-grow tw-border-t tw-border-gray-200">
+          </div>
+          <div class="tw-mt-4">
+            chips component
+          </div>
+        </div>
+        <div>
+          <div class="flex-box tw-gap-3">
+            <h3 class="tw-text-sm tw-font-medium tw-text-textsColorPurple">Specific Department</h3>
+            <hr class="tw-flex-grow tw-border-t tw-border-gray-200">
+          </div>
+          <div class="tw-w-full sm:tw-w-auto tw-mt-4">
+            <label class="tw-text-xs tw-font-medium tw-mb-2 tw-block">Organization unit</label>
+            <mat-form-field appearance="outline"
+              class="tw-w-full tw-flex-1 tw-mt-4 sm:tw-mt-0 tw-pb-0 tw-bg-white tw-border tw-border-gray-100 tw-rounded-sm">
+              <input type="text" class="placeholder:tw-text-xs" placeholder="Search By Name" matInput>
+            </mat-form-field>
+          </div>
+        </div>
+        <div>
+          <div class="flex-box tw-gap-3">
+            <h3 class="tw-text-sm tw-font-medium tw-text-textsColorPurple">Positions Sorting</h3>
+            <hr class="tw-flex-grow tw-border-t tw-border-gray-200">
+          </div>
+        </div>
+        <!-- drag & drop -->
+        <div>
+          <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+            <div class="example-box tw-mb-3 flex-c-s tw-gap-4 tw-cursor-move" *ngFor="let movie of movies;let i = index"
+              cdkDrag>
+              <div class="tw-text-gray-400 tw-space-x-1">
+                <span class="sfi sfi-dots"></span>
+                <span class="sfi sfi-dots"></span>
+              </div>
+              <span class="tw-w-5 tw-h-5 tw-rounded-full tw-bg-bgSTC tw-text-white flex-c-c tw-text-xs">{{i}}</span>
+              <div class="tw-space-x-3">
+                <span class="tw-text-xs">{{movie}}</span>
+                <span class="tw-text-microXs tw-text-gray-400">- Org name</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="flex-box tw-gap-3">
+            <h3 class="tw-text-sm tw-font-medium tw-text-textsColorPurple">Authority Limit Type</h3>
+            <hr class="tw-flex-grow tw-border-t tw-border-gray-200">
+          </div>
+          <!-- radio-buttons -->
+          <div class="radio-c tw-pt-4">
+            <mat-radio-group aria-label="Select an option" class="tw-space-x-4">
+              <mat-radio-button value="1"
+                class="tw-text-xs tw-border tw-border-gray-100 tw-p-3 tw-rounded-sm">Numeric</mat-radio-button>
+              <mat-radio-button value="2"
+                class="tw-text-xs tw-border tw-border-gray-100 tw-p-3 tw-rounded-sm">Text</mat-radio-button>
+            </mat-radio-group>
+          </div>
+          <!-- toggle -->
+          <div class="toggle-c tw-mt-3 tw-mb-4">
+            <mat-slide-toggle>
+              <span class="tw-text-sm">Delegation Authority</span>
+            </mat-slide-toggle>
+          </div>
+          <!-- toggle -->
+          <div class="toggle-c tw-mt-3 tw-mb-4">
+            <mat-slide-toggle>
+              <span class="tw-text-sm">Budget limit</span>
+            </mat-slide-toggle>
+          </div>
+        </div>
+      </main>
+      <footer
+        class="tw-bg-neutral-100 tw-p-4 tw-space-x-2 tw-fixed tw-bottom-0 tw-w-full tw-border tw-border-gray-100 tw-max-w-[450px] tw-text-right">
+        <button mat-flat-button class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-transparent tw-py-1.5 tw-px-4">
+          <span class="tw-text-gray-400 tw-capitalize tw-text-sm tw-block tw-py-px">clear all</span>
+        </button>
+        <button mat-flat-button class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-coral 
+         tw-py-1.5 tw-px-6 tw-border tw-border-solid tw-border-transparent
+          ">
+          <span class="tw-text-white tw-capitalize tw-text-sm tw-block tw-py-px"><i class="sfi sfi-plus tw-text-xs"></i>
+            add</span>
+        </button>
+      </footer>
+    </div>
+  </ng-template>
+</div>
+
+<!-- Filter| sidenav -->
+<div>
+  <ng-template #sideNav>
+    <div>
+      <header class="tw-bg-neutral-100 tw-p-8 tw-mb-6">
+        <span class="tw-text-gray-800 tw-capitalize tw-text-sm tw-block tw-space-x-2">
+          <i class="sfi sfi-filter-icon tw-text-bgSTC"></i> <span class="tw-font-bold">filter</span>
+        </span>
+      </header>
+      <main class="tw-px-8 tw-space-y-3">
+        <div class="tw-w-full sm:tw-w-auto select-box">
+          <mat-form-field appearance="outline"
+            class="tw-w-full tw-flex-1 tw-mt-4 sm:tw-mt-0 tw-pb-0 tw-bg-gray-50 tw-rounded-sm tw-border-0">
+            <mat-label class="tw-text-sm">-- Document Level</mat-label>
+            <span matSuffix class="sfi sfi-arrow-down tw-text-gray-600 tw-mt-[-5px] tw-text-sm"></span>
+            <mat-select>
+              <mat-option value="option">Option</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="tw-w-full sm:tw-w-auto select-box">
+          <mat-form-field appearance="outline"
+            class="tw-w-full tw-flex-1 tw-mt-4 sm:tw-mt-0 tw-pb-0 tw-bg-gray-50 tw-rounded-sm tw-border-0">
+            <mat-label class="tw-text-sm">-- Document Owner</mat-label>
+            <span matSuffix class="sfi sfi-arrow-down tw-text-gray-600 tw-mt-[-5px] tw-text-sm"></span>
+            <mat-select>
+              <mat-option value="option">Option</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="tw-w-full sm:tw-w-auto select-box">
+          <mat-form-field appearance="outline"
+            class="tw-w-full tw-flex-1 tw-mt-4 sm:tw-mt-0 tw-pb-0 tw-bg-gray-50 tw-rounded-sm tw-border-0">
+            <mat-label class="tw-text-sm">-- Document Type</mat-label>
+            <span matSuffix class="sfi sfi-arrow-down tw-text-gray-600 tw-mt-[-5px] tw-text-sm"></span>
+            <mat-select>
+              <mat-option value="option">Option</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="tw-w-full sm:tw-w-auto select-box">
+          <mat-form-field appearance="outline"
+            class="tw-w-full tw-flex-1 tw-mt-4 sm:tw-mt-0 tw-pb-0 tw-bg-gray-50 tw-rounded-sm tw-border-0">
+            <mat-label class="tw-text-sm">-- Classification</mat-label>
+            <span matSuffix class="sfi sfi-arrow-down tw-text-gray-600 tw-mt-[-5px] tw-text-sm"></span>
+            <mat-select>
+              <mat-option value="option">Option</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="tw-w-full sm:tw-w-auto select-box">
+          <mat-form-field appearance="outline"
+            class="tw-w-full tw-flex-1 tw-mt-4 sm:tw-mt-0 tw-pb-0 tw-bg-gray-50 tw-rounded-sm tw-border-0">
+            <mat-label class="tw-text-sm">-- Status</mat-label>
+            <span matSuffix class="sfi sfi-arrow-down tw-text-gray-600 tw-mt-[-5px] tw-text-sm"></span>
+            <mat-select>
+              <mat-option value="option">Option</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </main>
+      <footer class="tw-bg-neutral-100 tw-px-5 tw-py-8 tw-space-x-2 tw-fixed tw-bottom-0 tw-w-full">
+        <button mat-flat-button
+          class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-transparent tw-border tw-border-solid tw-border-gray-600 tw-py-1.5 tw-px-4">
+          <span class="tw-text-gray-600 tw-capitalize tw-text-sm tw-block tw-py-px">clear all</span>
+        </button>
+        <button mat-flat-button class="tw-w-auto tw-font-normal tw-leading-normal tw-bg-coral 
+          tw-py-1.5 tw-px-6 tw-border tw-border-solid tw-border-transparent
+          ">
+          <span class="tw-text-white tw-capitalize tw-text-sm tw-block tw-py-px">filter</span>
+        </button>
+      </footer>
+    </div>
+  </ng-template>
+</div>

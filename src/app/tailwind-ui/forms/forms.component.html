@@ -1,0 +1,305 @@
+<div class="tw-bg-white tw-p-5 tw-mt-5">
+  <div class="sm:flex-box flex-s tw-space-x-0 sm:tw-space-x-4 rtl:sm:tw-space-x-reverse tw-flex-col sm:tw-flex-row">
+    <div class="tw-mb-4 sm:tw-mb-0">
+      <span class="tw-text-sm tw-mb-3 tw-text-gray-700 tw-block">Current Logo</span>
+      <div class="tw-border tw-border-gray-200 tw-rounded-lg flex-c-c tw-w-36 tw-h-24">
+        <img src="../../../../../assets/images/Stc-logo.png" alt="">
+      </div>
+    </div>
+    <div class="tw-flex-1 tw-mt-4 sm:tw-mt-0">
+      <span class="tw-text-sm tw-mb-3 tw-text-gray-700 tw-block">Organization Logo</span>
+      <div class="tw-flex tw-justify-center tw-items-center tw-w-full">
+        <label for="dropzone-file"
+          class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-w-full tw-h-24 tw-bg-gray-50 tw-rounded-lg tw-border-2 tw-border-gray-300 tw-border-dashed tw-cursor-pointer">
+          <div
+            class="tw-space-x-3 rtl:tw-space-x-reverse tw-flex tw-justify-center tw-items-center tw-pt-5 tw-pb-6 tw-flex-col sm:tw-flex-row">
+            <span class="sfi sfi-folder tw-text-coral tw-text-3xl"></span>
+            <p class="tw-mb-0 tw-text-sm tw-text-gray-400">
+              <span>Drag and Drop logo here <strong class="tw-text-black">or
+                  Browse</strong> </span>
+            </p>
+            <!-- <p class="tw-text-xs tw-text-gray-500">SVG, PNG, JPG or
+                                  GIF (MAX. 800x400px)</p> -->
+          </div>
+          <input id="dropzone-file" type="file" class="tw-hidden" />
+        </label>
+      </div>
+    </div>
+  </div>
+  <!-- form-row -->
+  <div class="form-row flex-box tw-flex-col sm:tw-flex-row">
+    <div class="tw-flex-1 tw-mt-4">
+      <label class="tw-mb-0 md:tw-mb-2 tw-text-sm tw-text-gray-800 tw-block">Organization Name
+        (EN)</label>
+      <mat-form-field class="tw-w-full" appearance="outline">
+        <input matInput class="placeholder:tw-text-xs" placeholder="Organization title">
+      </mat-form-field>
+    </div>
+    <span class="tw-mx-5"></span>
+    <div class="tw-flex-1 tw-text-right tw-mt-4">
+      <label class="tw-mb-0 md:tw-mb-2 tw-text-sm tw-text-gray-800 tw-block">اسم الشركة
+        (AR)</label>
+      <mat-form-field class="tw-w-full" appearance="outline">
+        <input matInput class="placeholder:tw-text-xs" placeholder="اكتب العنوان" class="tw-text-right">
+      </mat-form-field>
+    </div>
+  </div>
+  <!-- messages -->
+  <div class="form-row flex-s tw-flex-col sm:tw-flex-row">
+    <div class="tw-flex-1 tw-mt-4">
+      <label class="tw-mb-0 md:tw-mb-2 tw-text-sm tw-text-gray-800 tw-block">Organization
+        description (EN)</label>
+      <mat-form-field class="textarea-field tw-w-full" appearance="outline">
+        <textarea matInput class="placeholder:tw-text-xs" placeholder="Add Organization description" rows="6"></textarea>
+      </mat-form-field>
+    </div>
+    <span class="tw-mx-5"></span>
+    <div class="tw-flex-1 tw-text-right tw-mt-4">
+      <label class="tw-mb-0 md:tw-mb-2 tw-text-sm tw-text-gray-800 tw-block">وصف الشركة
+        (AR)</label>
+      <mat-form-field class="textarea-field tw-w-full" appearance="outline">
+        <textarea class="tw-text-right" matInput class="placeholder:tw-text-xs" placeholder="اضف وصف الشركة" rows="6"></textarea>
+      </mat-form-field>
+    </div>
+  </div>
+  <!--  -->
+  <div class="form-row flex-s tw-flex-col sm:tw-flex-row">
+    <div class="tw-flex-1 tw-w-full sm:tw-w-auto tw-mt-4">
+      <label class="tw-mb-0 md:tw-mb-2 tw-text-sm tw-text-gray-800 tw-block">Status</label>
+      <div class="tw-flex">
+        <button mat-flat-button
+          class="tw-flex-1 tw-w-auto tw-rounded-none tw-font-normal tw-leading-normal tw-bg-bgSTC tw-py-3">
+          <span class="tw-text-white tw-capitalize">Active</span>
+        </button>
+        <button mat-flat-button
+          class="tw-flex-1 tw-w-auto tw-rounded-none tw-font-normal tw-leading-normal tw-bg-gray-100 tw-py-3">
+          <span class="tw-text-gray-700 tw-capitalize tw-text-sm">Deactivate</span>
+        </button>
+      </div>
+    </div>
+    <span class="tw-mx-5"></span>
+    <div class="tw-flex-1 tw-mt-4 tw-w-full md:tw-w-auto">
+      <label class="tw-mb-0 md:tw-mb-2 tw-text-sm tw-text-gray-800 tw-block">Assign to
+        groups</label>
+      <div class="flex-box tw-flex-col sm:tw-flex-row">
+        <mat-form-field class="tw-w-full" appearance="outline" class="tw-flex-1 tw-mt-4 sm:tw-mt-0 tw-pb-0">
+          <input type="text" class="placeholder:tw-text-xs" placeholder="Search Here" aria-label="Number" matInput [matAutocomplete]="auto">
+          <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+            <mat-option>
+              test AutoComplete
+            </mat-option>
+          </mat-autocomplete>
+          <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+        <span class="tw-mx-1 tw-my-3 sm:tw-my-0"></span>
+        <button mat-stroked-button
+          class="tw-w-full sm:tw-w-14 tw-font-normal tw-leading-normal tw-py-3 tw-border tw-border-coral tw-rounded-sm">
+          <span class="sfi sfi-plus tw-text-coral tw-my-0.5 tw-block tw-text-base"></span>
+          <!-- <span class="tw-h-1 tw-block"></span> -->
+        </button>
+      </div>
+      <!-- result -->
+      <div class="flex-box tw-mt-3 tw-flex-col md:tw-flex-row">
+        <div class="tw-bg-gray-50 tw-w-full md:tw-w-1/2 tw-px-4 tw-py-2">
+          <div class="flex-c-b">
+            <span class="tw-text-gray-700 tw-font-medium tw-text-sm">Ux Group</span>
+            <button mat-flat-button
+              class="tw-min-w-14 tw-px-3 tw-w-auto tw-rounded-none tw-font-normal tw-leading-normal tw-bg-coralLight tw-py-1">
+              <span class="sfi sfi-delete tw-text-coral tw-text-base tw-my-px tw-block"></span>
+            </button>
+          </div>
+        </div>
+        <span class="tw-mx-2 tw-my-3 sm:tw-mt-0"></span>
+        <div class="tw-bg-gray-50 tw-w-full md:tw-w-1/2 tw-px-4 tw-py-2">
+          <div class="flex-c-b">
+            <span class="tw-text-gray-700 tw-font-medium tw-text-sm">Ux Group</span>
+            <button mat-flat-button
+              class="tw-min-w-14 tw-px-3 tw-w-auto tw-rounded-none tw-font-normal tw-leading-normal tw-bg-coralLight tw-py-1">
+              <span class="sfi sfi-delete tw-text-coral tw-text-base tw-my-px tw-block"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- result -->
+  <div class="flex-c-b tw-mt-6">
+    <label class="tw-text-sm tw-text-gray-800 tw-block">Member
+      Added</label>
+    <button mat-button class="tw-text-coral tw-text-sm tw-py-3">Delete All</button>
+  </div>
+  <div class="tw-overflow-x-auto">
+    <section class="tw-table tw-bg-gray-50 tw-w-full tw-border tw-border-gray-100 tw-p-4">
+      <header class="tw-table-row tw-mb-3">
+        <div class="tw-table-cell tw-text-gray-500 tw-text-xs tw-px-5"># Name</div>
+        <div class="tw-table-cell tw-text-gray-500 tw-text-xs">Role</div>
+        <div class="tw-table-cell tw-text-transparent tw-text-xs">transparent_text</div>
+      </header>
+      <!-- space -->
+      <span class="tw-block tw-h-2 tw-w-full"></span>
+      <!-- member -->
+      <div class="tw-table-row tw-bg-white tw-w-full tw-shadow-sm tw-shadow-gray-700/10 tw-mb-3">
+        <div class="tw-table-cell tw-px-5 tw-py-3 tw-align-middle">
+          <!-- members -->
+          <div class="flex-box tw-space-x-6 rtl:tw-space-x-reverse">
+            <div class="checkbox">
+              <mat-checkbox></mat-checkbox>
+              <!-- <input type="checkbox" class="tw-h-5 tw-w-5 tw-border tw-border-gray-200"> -->
+            </div>
+            <div class="flex-box tw-space-x-3 rtl:tw-space-x-reverse">
+              <div>
+                <img src="../../../assets/images/user.png"
+                  class="tw-w-8 tw-h-8 tw-rounded-full tw-min-w-16 tw-border tw-border-gray-200" alt="">
+              </div>
+              <div>
+                <h4 class="tw-text-sm tw-mb-0 tw-font-semibold">
+                  Nour Elsharkawy
+                </h4>
+                <span class="tw-text-xs tw-text-gray-600 tw-block">Owner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tw-table-cell tw-py-3 tw-align-middle">
+          <div>
+            <button [matMenuTriggerFor]="menu">
+              <div class="flex-box tw-space-x-3 rtl:tw-space-x-reverse">
+                <div class="tw-text-sm tw-text-gray-500">Admin</div>
+                <mat-icon class="tw-text-lg">keyboard_arrow_down</mat-icon>
+              </div>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>
+                <mat-icon>dialpad</mat-icon>
+                <span>Redial</span>
+              </button>
+              <button mat-menu-item disabled>
+                <mat-icon>voicemail</mat-icon>
+                <span>Check voice mail</span>
+              </button>
+              <button mat-menu-item>
+                <mat-icon>notifications_off</mat-icon>
+                <span>Disable alerts</span>
+              </button>
+            </mat-menu>
+          </div>
+        </div>
+        <div class="tw-table-cell tw-px-5 tw-py-3 tw-align-middle tw-text-right">
+          <button mat-flat-button
+            class="tw-min-w-14 tw-px-3 tw-w-auto tw-rounded-none tw-font-normal tw-leading-normal tw-bg-coralLight tw-py-1">
+            <span class="sfi sfi-delete tw-text-coral tw-text-base tw-my-px tw-block"></span>
+          </button>
+        </div>
+      </div>
+      <!-- space -->
+      <span class="tw-block tw-h-4 tw-w-full"></span>
+      <div class="tw-table-row tw-bg-white tw-w-full tw-shadow-sm tw-shadow-gray-700/10 tw-mb-3">
+        <div class="tw-table-cell tw-px-5 tw-py-3 tw-align-middle">
+          <!-- members -->
+          <div class="flex-box tw-space-x-6 rtl:tw-space-x-reverse">
+            <div class="checkbox">
+              <mat-checkbox></mat-checkbox>
+              <!-- <input type="checkbox" class="tw-h-5 tw-w-5 tw-border tw-border-gray-200"> -->
+            </div>
+            <div class="flex-box tw-space-x-3 rtl:tw-space-x-reverse">
+              <div>
+                <img src="../../../assets/images/user.png"
+                  class="tw-w-8 tw-h-8 tw-rounded-full tw-min-w-16 tw-border tw-border-gray-200" alt="">
+              </div>
+              <div>
+                <h4 class="tw-text-sm tw-mb-0 tw-font-semibold">
+                  Nour Elsharkawy
+                </h4>
+                <span class="tw-text-xs tw-text-gray-600 tw-block">Owner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tw-table-cell tw-py-3 tw-align-middle">
+          <div>
+            <button [matMenuTriggerFor]="menu">
+              <div class="flex-box tw-space-x-3 rtl:tw-space-x-reverse">
+                <div class="tw-text-sm tw-text-gray-500">Admin</div>
+                <mat-icon class="tw-text-lg">keyboard_arrow_down</mat-icon>
+              </div>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>
+                <mat-icon>dialpad</mat-icon>
+                <span>Redial</span>
+              </button>
+              <button mat-menu-item disabled>
+                <mat-icon>voicemail</mat-icon>
+                <span>Check voice mail</span>
+              </button>
+              <button mat-menu-item>
+                <mat-icon>notifications_off</mat-icon>
+                <span>Disable alerts</span>
+              </button>
+            </mat-menu>
+          </div>
+        </div>
+        <div class="tw-table-cell tw-px-5 tw-py-3 tw-align-middle tw-text-right">
+          <button mat-flat-button
+            class="tw-min-w-14 tw-px-3 tw-w-auto tw-rounded-none tw-font-normal tw-leading-normal tw-bg-coralLight tw-py-1">
+            <span class="sfi sfi-delete tw-text-coral tw-text-base tw-my-px tw-block"></span>
+          </button>
+        </div>
+      </div>
+
+    </section>
+  </div>
+        <!-- date-time -->
+        <div class="form-row flex-box tw-flex-col sm:tw-flex-row">
+          <div class="tw-flex-1 tw-mt-4">
+              <label class="tw-mb-0 md:tw-mb-2 tw-text-sm tw-text-gray-800 tw-block">Event Date</label>
+              <mat-form-field class="tw-w-full" appearance="outline">
+                  <mat-date-range-input [rangePicker]="rangePicker">
+                      <input matStartDate class="placeholder:tw-text-xs" placeholder="Start date">
+                      <input matEndDate class="placeholder:tw-text-xs" placeholder="End date">
+                  </mat-date-range-input>
+                  <mat-datepicker-toggle matSuffix [for]="rangePicker"></mat-datepicker-toggle>
+                  <mat-date-range-picker #rangePicker>
+                      <mat-date-range-picker-actions>
+                          <button mat-button matDateRangePickerCancel>Cancel</button>
+                          <button mat-raised-button color="primary" matDateRangePickerApply>Apply</button>
+                      </mat-date-range-picker-actions>
+                  </mat-date-range-picker>
+              </mat-form-field>
+          </div>
+          <!-- space -->
+          <span class="tw-mx-5"></span>
+          <div class="tw-flex-1 tw-mt-4">
+              <label class="tw-mb-0 md:tw-mb-2 tw-text-sm tw-text-gray-800 tw-block">Event Time</label>
+              <mat-form-field class="tw-w-full" appearance="outline">
+                  <input matInput class="placeholder:tw-text-xs" placeholder="Select Time">
+                  <mat-icon matSuffix>av_timer</mat-icon>
+              </mat-form-field>
+          </div>
+      </div>
+      <!-- plus-btn -->
+      <div class="form-row flex-box tw-flex-col sm:tw-flex-row tw-mt-8">
+        <div class="tw-flex-1 tw-mt-4">
+            <button mat-flat-button
+                class="tw-w-auto tw-rounded-none tw-font-normal tw-leading-normal tw-bg-bgSTC tw-py-3 tw-px-8">
+                <span class="sfi sfi-plus tw-text-white tw-text-sm"></span>
+                <span class="tw-mx-1"></span>
+                <span class="tw-text-white tw-text-sm">Add another Agenda</span>
+            </button>
+        </div>
+    </div>
+     <!-- actions -->
+     <div class="flex-box tw-space-x-3 rtl:tw-space-x-reverse tw-mt-8">
+      <button mat-stroked-button
+          class="tw-w-12 tw-rounded-none tw-font-normal tw-leading-normal tw-py-1 tw-border tw-border-coral">
+          <mat-icon
+              class="arrow-right tw-text-coral tw-text-4xl tw-my-px tw-block tw-h-9 ltr:tw-ml-11 rtl:tw-mr-11">
+              keyboard_arrow_left</mat-icon>
+          <span class="tw-h-0.5 tw-block"></span>
+      </button>
+      <button mat-flat-button
+          class="tw-w-auto tw-rounded-none tw-font-normal tw-leading-normal tw-bg-coral tw-py-3 tw-px-12">
+          <span class="tw-text-white tw-capitalize tw-text-base">save</span>
+      </button>
+  </div>
+</div>

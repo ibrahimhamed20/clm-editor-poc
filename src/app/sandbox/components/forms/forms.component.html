@@ -1,0 +1,72 @@
+<div class="tw-mt-8 lg:tw-mt-12 tw-bg-white tw-px-4 tw-py-6 tw-border tw-border-gray-200">
+  <form class="">
+    <div class="flex-c-s tw-flex-wrap tw-gap-x-6 tw-gap-y-8">
+      <div class="tw-w-full sm:tw-w-auto lg:tw-w-[280px]">
+        <label class="tw-text-gray-700 tw-mb-2 tw-text-sm tw-block tw-font-medium">Status</label>
+        <mat-form-field appearance="outline" class="tw-p-0 tw-w-full tw-border tw-border-gray-200">
+          <span matSuffix>
+            <mat-icon class="tw-font-medium tw-text-gray-400">keyboard_arrow_down</mat-icon>
+          </span>
+          <mat-select placeholder="Choose Sector"
+            class="tw-bg-transparent tw-p-px tw-text-sm tw-w-100 placeholder:tw-italic">
+            <mat-option value="option">Option</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="tw-w-full sm:tw-w-auto t-datepicker lg:tw-w-[280px]">
+        <label class="tw-text-gray-700 tw-mb-2 tw-text-sm tw-block tw-font-medium">Date</label>
+        <mat-form-field appearance="outline" class="tw-p-0 tw-w-full tw-border tw-border-gray-200">
+          <input matInput placeholder="12/01/2022 - 12/01/2023" [matDatepicker]="picker"
+            class="tw-bg-transparent tw-p-px tw-text-sm tw-w-100">
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <div class="tw-w-full sm:tw-w-auto select-box tw-flex-1">
+        <label class="tw-text-xs tw-font-medium tw-mb-2 tw-block">Document Owner Level</label>
+        <mat-form-field appearance="outline"
+          class="tw-w-full tw-flex-1 tw-mt-4 sm:tw-mt-0 tw-pb-0 tw-bg-white tw-border tw-border-gray-200 tw-rounded-sm">
+          <span matSuffix class="sfi sfi-search tw-text-gray-400 tw-mt-[-5px]"></span>
+          <input type="text" class="placeholder:tw-text-xs" placeholder="Search By Name/Email" matInput>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <!-- radio-buttons -->
+    <div class="radio-c tw-border-t tw-border-gray-200 tw-pt-4 tw-mt-4">
+      <label class="tw-text-xs tw-font-medium tw-block tw-mb-4">PDF Layout</label>
+      <mat-radio-group aria-label="Select an option" class="tw-space-x-4 tw-block tw-h-[41px]">
+        <mat-radio-button value="1"
+          class="tw-text-xs tw-border tw-border-gray-200 tw-p-3 tw-rounded-sm">Portrait</mat-radio-button>
+        <mat-radio-button value="2"
+          class="tw-text-xs tw-border tw-border-gray-200 tw-p-3 tw-rounded-sm">Portrait</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <div class="flex-c-b tw-gap-4 tw-mt-5 tw-flex-col md:tw-flex-row">
+      <div class="tw-w-full sm:tw-w-auto select-box tw-flex-1">
+        <label class="tw-text-xs tw-font-medium tw-mb-2 tw-block">Arabic <span
+            class="tw-text-coral tw-italic tw-text-microXs tw-font-normal">Should be at least 3 character</span>
+        </label>
+        <mat-form-field appearance="outline"
+          class="tw-w-full tw-flex-1 tw-mt-4 sm:tw-mt-0 tw-pb-0 tw-bg-white tw-border tw-border-gray-200 tw-rounded-sm">
+          <input type="text" class="placeholder:tw-text-xs" placeholder="Write Name Here" matInput>
+        </mat-form-field>
+      </div>
+      <div class="tw-w-full sm:tw-w-auto select-box tw-flex-1">
+        <label class="tw-text-xs tw-font-medium tw-mb-2 tw-block">English <span
+            class="tw-text-coral tw-italic tw-text-microXs tw-font-normal">Should be at least 3 character</span>
+        </label>
+        <mat-form-field appearance="outline"
+          class="tw-w-full tw-flex-1 tw-mt-4 sm:tw-mt-0 tw-pb-0 tw-bg-white tw-border tw-border-gray-200 tw-rounded-sm">
+          <input type="text" class="placeholder:tw-text-xs" placeholder="Write Name Here" matInput>
+        </mat-form-field>
+      </div>
+    </div>
+    <!-- toggle -->
+    <div class="toggle-c tw-mt-3 tw-mb-4">
+      <mat-slide-toggle>
+        <span class="tw-text-sm">Policy related to authority</span>
+      </mat-slide-toggle>
+    </div>
+  </form>
+</div>

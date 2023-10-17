@@ -1,0 +1,97 @@
+<div class="tw-bg-white tw-px-4 tw-py-6">
+    <div class="flex-c-b">
+        <h3 class="tw-mb-0"> <b>Create New Clause</b></h3>
+        <button matDialogClose mat-flat-button class=" tw-w-5 tw-h-5 tw-min-w-0 tw-px-0 tw-bg-[#999898]">
+            <span class="tw-text-white tw-text-sm tw-block tw-py-px">
+                <span class="sfi sfi-close font-14">X</span>
+            </span>
+        </button>
+    </div>
+
+    <form [formGroup]="clauseForm" class="form">
+        <div class="flex-c-b tw-gap-4  tw-mb-5 tw-mt-5 tw-flex-col md:tw-flex-row">
+            <div class="tw-w-full sm:tw-w-auto select-box tw-flex-1">
+                <label class="tw-text-xs tw-mb-2 tw-block">Clause Name AR
+                </label>
+                <mat-form-field appearance="outline"
+                    class="tw-w-full tw-flex-1 tw-mt-4 sm:tw-mt-0 tw-pb-0 tw-bg-white tw-border tw-border-gray-200 tw-rounded-sm">
+                    <input formControlName="titleAR" type="text" class="placeholder:tw-text-xs"
+                        placeholder="Write Name Here" matInput />
+                </mat-form-field>
+            </div>
+            <div class="tw-w-full sm:tw-w-auto select-box tw-flex-1">
+                <label class="tw-text-xs tw-mb-2 tw-block">Clause Name EN
+                </label>
+                <mat-form-field appearance="outline"
+                    class="tw-w-full tw-flex-1 tw-mt-4 sm:tw-mt-0 tw-pb-0 tw-bg-white tw-border tw-border-gray-200 tw-rounded-sm">
+                    <input formControlName="titleEN" type="text" class="placeholder:tw-text-xs"
+                        placeholder="Write Name Here" matInput />
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="flex-c-s tw-flex-wrap tw-gap-x-6 tw-gap-y-8">
+            <div class="tw-w-full sm:tw-w-auto select-box tw-flex-1">
+                <label class="tw-text-gray-700 tw-mb-2 tw-text-sm tw-block">Type</label>
+                <mat-form-field appearance="outline" class="tw-p-0 tw-w-full tw-border tw-border-gray-200">
+                    <span matSuffix>
+                        <mat-icon class="tw-text-gray-400">keyboard_arrow_down</mat-icon>
+                    </span>
+                    <mat-select [compareWith]="compareFn" formControlName="type" placeholder="Choose Type"
+                        class="tw-bg-transparent tw-p-px tw-text-sm tw-w-100 placeholder:tw-italic">
+                        <mat-option value="Investment">Investment</mat-option>
+                        <mat-option value="Finance">Finance</mat-option>
+                        <mat-option value="Operation">Operation</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="tw-w-full sm:tw-w-auto select-box tw-flex-1">
+                <label class="tw-text-gray-700 tw-mb-2 tw-text-sm tw-block">Calssification</label>
+                <mat-form-field appearance="outline" class="tw-p-0 tw-w-full tw-border tw-border-gray-200">
+                    <span matSuffix>
+                        <mat-icon class="tw-text-gray-400">keyboard_arrow_down</mat-icon>
+                    </span>
+                    <mat-select [compareWith]="compareFn" formControlName="classification"
+                        placeholder="Choose Classification"
+                        class="tw-bg-transparent tw-p-px tw-text-sm tw-w-100 placeholder:tw-italic">
+                        <mat-option value="Calssification 1">Calssification 1</mat-option>
+                        <mat-option value="Calssification 2">Calssification 2</mat-option>
+                        <mat-option value="Calssification 3">Calssification 3</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <!-- toggle -->
+        <div class="toggle-c tw-mt-3 tw-mb-4">
+            <mat-slide-toggle formControlName="isNegotiable">
+                <span class="tw-text-sm">Is this Clause negotiable ?</span>
+            </mat-slide-toggle>
+        </div>
+
+        <div class="content">
+
+        </div>
+        <div class="tw-w-full sm:tw-w-auto select-box tw-flex-1">
+            <label class="tw-text-xs tw-mb-2 tw-block">Content</label>
+            <app-editor></app-editor>
+        </div>
+    </form>
+
+    <div class="flex-c-b tw-mt-4 tw-flex-wrap md:tw-flex-nowrap tw-flex-col-reverse md:tw-flex-row">
+        <div>
+            <button mat-flat-button (click)="onSubmit()" [disabled]="!clauseForm.valid"
+                class="tw-w-auto tw-rounded-none tw-font-normal tw-leading-normal tw-bg-transparent tw-border-2 tw-border-solid tw-border-cyan-400 tw-py-2.5 tw-px-8 tw-min-h-[50px]">
+                <span class="tw-text-cyan-400 tw-capitalize tw-text-sm tw-block tw-py-px">Save as draft</span>
+            </button>
+        </div>
+        <div class="flex-c tw-gap-2 tw-mb-3 md:tw-mb-0">
+            <button mat-flat-button matDialogClose
+                class="tw-w-auto tw-rounded-none tw-font-normal tw-leading-normal tw-bg-transparent tw-border-2 tw-border-solid tw-border-coral tw-py-2.5 tw-px-8 tw-min-h-[50px]">
+                <span class="tw-text-coral tw-capitalize tw-text-sm tw-block tw-py-px">Discard</span>
+            </button>
+            <button (click)="onSubmit()" mat-raised-button [disabled]="!clauseForm.valid"
+                class="tw-leading-[3.2] tw-rounded-sm tw-shadow-none tw-bg-coral tw-text-white tw-w-40 tw-h-12">{{data ? 'Save' : 'Create'}}
+            </button>
+        </div>
+    </div>
+</div>
